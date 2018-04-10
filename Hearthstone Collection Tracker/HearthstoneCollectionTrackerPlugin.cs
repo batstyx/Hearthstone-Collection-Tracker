@@ -176,7 +176,7 @@ namespace Hearthstone_Collection_Tracker
 
         public string Author => "Vasilev Konstantin & the Community";
 
-        public static readonly Version PluginVersion = new Version(0, 8, 2);
+        public static readonly Version PluginVersion = new Version(0, 8, 3);
 
         public Version Version => PluginVersion;
 
