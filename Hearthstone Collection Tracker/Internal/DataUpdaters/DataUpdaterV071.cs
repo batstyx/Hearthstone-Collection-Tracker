@@ -48,7 +48,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
 
         public void PerformUpdate()
         {
-            const string JtUGSet = "Journey to Un'Goro";
+            const string JtUGSet = SetNames.JourneytoUnGoro;
             // iterate over each collection and add JtUG cards
             foreach (var file in Directory.GetFiles(HearthstoneCollectionTrackerPlugin.PluginDataDir, "Collection_*.xml", SearchOption.TopDirectoryOnly))
             {

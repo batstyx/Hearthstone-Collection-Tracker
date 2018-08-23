@@ -58,7 +58,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
                     continue;
                 }
                 var setsInfo = Hearthstone_Deck_Tracker.XmlManager<List<BasicSetCollectionInfo>>.Load(account.FileStoragePath);
-                var TGTSet = setsInfo.FirstOrDefault(s => s.SetName == "The Grand Tournament");
+                var TGTSet = setsInfo.FirstOrDefault(s => s.SetName == SetNames.TheGrandTournament);
                 if (TGTSet == null)
                 {
                     continue;

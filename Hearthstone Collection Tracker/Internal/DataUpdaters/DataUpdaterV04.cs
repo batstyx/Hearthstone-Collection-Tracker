@@ -48,7 +48,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
 
         public void PerformUpdate()
         {
-            const string WOGSet = "Whispers of the Old Gods";
+            const string WOGSet = SetNames.WhispersoftheOldGods;
             // iterate over each collection and add WOG cards
             foreach (var file in Directory.GetFiles(HearthstoneCollectionTrackerPlugin.PluginDataDir, "Collection_*.xml", SearchOption.TopDirectoryOnly))
             {

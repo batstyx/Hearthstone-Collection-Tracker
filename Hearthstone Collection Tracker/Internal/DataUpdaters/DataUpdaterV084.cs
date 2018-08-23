@@ -39,7 +39,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
 
         public void PerformUpdate()
         {
-            const string BoomsdaySet = "The Boomsday Project";
+            const string BoomsdaySet = SetNames.TheBoomsdayProject;
             // iterate over each collection and add Boomsday cards
             foreach (var file in Directory.GetFiles(HearthstoneCollectionTrackerPlugin.PluginDataDir, "Collection_*.xml", SearchOption.TopDirectoryOnly))
             {

@@ -48,7 +48,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
 
         public void PerformUpdate()
         {
-            const string MSoGSet = "Mean Streets of Gadgetzan";
+            const string MSoGSet = SetNames.MeanStreetsofGadgetzan;
             // iterate over each collection and add MSoG cards
             foreach (var file in Directory.GetFiles(HearthstoneCollectionTrackerPlugin.PluginDataDir, "Collection_*.xml", SearchOption.TopDirectoryOnly))
             {

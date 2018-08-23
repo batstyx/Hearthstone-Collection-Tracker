@@ -39,7 +39,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
 
         public void PerformUpdate()
         {
-            const string WitchwoodSet = "The Witchwood";
+            const string WitchwoodSet = SetNames.TheWitchwood;
             // iterate over each collection and add WW cards
             foreach (var file in Directory.GetFiles(HearthstoneCollectionTrackerPlugin.PluginDataDir, "Collection_*.xml", SearchOption.TopDirectoryOnly))
             {

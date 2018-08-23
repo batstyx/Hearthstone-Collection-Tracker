@@ -39,7 +39,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
 
         public void PerformUpdate()
         {
-            const string KotFTSet = "Knights of the Frozen Throne";
+            const string KotFTSet = SetNames.KnightsoftheFrozenThrone;
             // iterate over each collection and add JtUG cards
             foreach (var file in Directory.GetFiles(HearthstoneCollectionTrackerPlugin.PluginDataDir, "Collection_*.xml", SearchOption.TopDirectoryOnly))
             {

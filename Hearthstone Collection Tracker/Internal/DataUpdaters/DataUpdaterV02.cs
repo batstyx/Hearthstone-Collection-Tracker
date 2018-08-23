@@ -46,7 +46,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
                     }
                 }
                 // add TGT cards
-                const string TGTSet = "The Grand Tournament";
+                const string TGTSet = SetNames.TheGrandTournament;
                 oldSetInfo.Add(new BasicSetCollectionInfo()
                 {
                     SetName = TGTSet,
