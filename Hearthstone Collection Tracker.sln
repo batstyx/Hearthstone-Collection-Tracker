@@ -21,16 +21,16 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Debug|x86.Build.0 = Debug|Any CPU
+		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Debug|x86.ActiveCfg = Debug|x86
+		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Debug|x86.Build.0 = Debug|x86
 		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.PluginsFolder|Any CPU.ActiveCfg = PluginsFolder|Any CPU
 		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.PluginsFolder|Any CPU.Build.0 = PluginsFolder|Any CPU
-		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.PluginsFolder|x86.ActiveCfg = PluginsFolder|Any CPU
-		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.PluginsFolder|x86.Build.0 = PluginsFolder|Any CPU
+		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.PluginsFolder|x86.ActiveCfg = PluginsFolder|x86
+		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.PluginsFolder|x86.Build.0 = PluginsFolder|x86
 		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Release|Any CPU.Build.0 = Release|Any CPU
-		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Release|x86.ActiveCfg = Release|Any CPU
-		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Release|x86.Build.0 = Release|Any CPU
+		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Release|x86.ActiveCfg = Release|x86
+		{14B0D152-BFF1-44EB-B25E-A5DED94E1F95}.Release|x86.Build.0 = Release|x86
 		{1694A2F8-645A-4263-A6AB-FC26323FD675}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{1694A2F8-645A-4263-A6AB-FC26323FD675}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1694A2F8-645A-4263-A6AB-FC26323FD675}.Debug|x86.ActiveCfg = Debug|x86
@@ -58,5 +58,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E111080-508A-4CCD-813D-F2422BEB0D29}
 	EndGlobalSection
 EndGlobal
