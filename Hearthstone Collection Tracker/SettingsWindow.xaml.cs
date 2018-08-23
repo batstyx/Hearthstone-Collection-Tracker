@@ -167,7 +167,7 @@ namespace Hearthstone_Collection_Tracker
 					}
 				}
 			}
-			catch(ImportingException ex)
+			catch(ImportingException)
 			{
 				return false;
 			}
