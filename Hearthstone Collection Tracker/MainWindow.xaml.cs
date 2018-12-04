@@ -320,10 +320,16 @@ namespace Hearthstone_Collection_Tracker
         private void GetSetsInfo()
         {
             CardsInDecks.Instance.UpdateCardsInDecks();
-            this.SetsInfo = HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Select(set => new SetDetailInfoViewModel
+            //this.SetsInfo = HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Select(set => new SetDetailInfoViewModel
+            //{
+            //    SetName = set.SetName,
+            //    SetCards = new TrulyObservableCollection<CardInCollection>(set.Cards.ToList())
+            //}).ToList();
+
+            this.SetsInfo = SetCardsManager.CollectableSets.Select(s => new SetDetailInfoViewModel
             {
-                SetName = set.SetName,
-                SetCards = new TrulyObservableCollection<CardInCollection>(set.Cards.ToList())
+                SetName = s,
+                SetCards = new TrulyObservableCollection<CardInCollection>(HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Where(set => set.SetName == s).FirstOrDefault().Cards.ToList()),
             }).ToList();
         }
 
