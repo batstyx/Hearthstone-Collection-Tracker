@@ -148,6 +148,7 @@
     <Compile Include="Internal\DataUpdaters\DataUpdaterV04.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV05.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV051.cs" />
+    <Compile Include="Internal\DataUpdaters\DataUpdaterV085.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV084.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV083.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV081.cs" />
@@ -248,7 +249,8 @@
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PostBuildEvent>if "$(ConfigurationName)" == "PluginsFolder" copy /Y "$(TargetPath)" "%25appdata%25\HearthstoneDeckTracker\Plugins\$(TargetName).dll"</PostBuildEvent>
+    <PostBuildEvent>if "$(ConfigurationName)" == "PluginsFolder" copy /Y "$(TargetPath)" "%25appdata%25\HearthstoneDeckTracker\Plugins\$(TargetName).dll"
+if "$(ConfigurationName)" == "PluginsFolder" copy /Y "$(TargetDir)$(TargetName).pdb" "%25appdata%25\HearthstoneDeckTracker\Plugins\$(TargetName).pdb"</PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

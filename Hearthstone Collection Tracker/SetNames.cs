@@ -18,5 +18,6 @@ namespace Hearthstone_Collection_Tracker
         public const string KoboldsandCatacombs = "Kobolds and Catacombs";
         public const string TheWitchwood = "The Witchwood";
         public const string TheBoomsdayProject = "The Boomsday Project";
+        public const string RastakhansRumble = "Rastakhan's Rumble";
     }
 }
