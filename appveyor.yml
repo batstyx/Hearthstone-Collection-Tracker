@@ -10,7 +10,9 @@ build:
   project: Hearthstone Collection Tracker.sln
   verbosity: minimal
 artifacts:
-- path: Hearthstone Collection Tracker\bin\Release\HearthstoneCollectionTracker.dll
+- path: Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll
   name: Release-dll
-- path: Hearthstone Collection Tracker\bin\Debug\HearthstoneCollectionTracker.dll
+- path: Hearthstone Collection Tracker\bin\x86\Debug\HearthstoneCollectionTracker.dll
   name: Debug-dll
+- path: Hearthstone Collection Tracker\bin\x86\Debug\HearthstoneCollectionTracker.pdb
+  name: Debug-pdb
