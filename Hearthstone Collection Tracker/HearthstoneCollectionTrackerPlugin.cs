@@ -170,7 +170,9 @@ namespace Hearthstone_Collection_Tracker
 
         public string Name => "Collection Tracker";
 
-        public string Description => @"Helps user to keep track on packs progess, suggesting the packs that will most probably contain missing cards. Report bugs and issues at https://github.com/HearthSim/Hearthstone-Collection-Tracker/issues";
+        public string Description => @"Helps user to keep track on packs progess, suggesting the packs that will most probably contain missing cards. 
+	No longer supported by https://github.com/HearthSim/Hearthstone-Collection-Tracker
+	This version built from https://github.com/batstyx/Hearthstone-Collection-Tracker";
 
         public string ButtonText => "Settings & Import";
 
