@@ -1,10 +1,10 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/5v6u45oo6b49ckje?svg=true)](https://ci.appveyor.com/project/judge2020/hearthstone-collection-tracker)
+[![Build status](https://ci.appveyor.com/api/projects/status/github/batstyx/Hearthstone-Collection-Tracker?svg=true)](https://ci.appveyor.com/project/batstyx/hearthstone-collection-tracker)
 
 
 Hearthstone-Collection-Tracker
 ========================
 
-## The community now maintains this plugin.
+**This plugin is no longer maintained by the [Community](https://github.com/HearthSim/Hearthstone-Collection-Tracker)**
 
 This is a plugin for [Hearthstone Deck Tracker] 
 
