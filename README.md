@@ -1,5 +1,6 @@
 [![Build status](https://ci.appveyor.com/api/projects/status/github/batstyx/Hearthstone-Collection-Tracker?svg=true)](https://ci.appveyor.com/project/batstyx/hearthstone-collection-tracker)
 
+[Latest Release](https://github.com/batstyx/time-for-eve/releases/latest)
 
 Hearthstone-Collection-Tracker
 ========================
