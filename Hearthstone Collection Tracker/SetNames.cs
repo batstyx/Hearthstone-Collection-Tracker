@@ -9,6 +9,9 @@ namespace Hearthstone_Collection_Tracker
     internal class SetNames
     {
         public const string Classic = "Classic";
+
+        public const string HallofFame = "Hall of Fame";
+
         public const string GoblinsvsGnomes = "Goblins vs Gnomes";
         public const string TheGrandTournament = "The Grand Tournament";
         public const string WhispersoftheOldGods = "Whispers of the Old Gods";
