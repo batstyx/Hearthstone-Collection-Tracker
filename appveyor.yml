@@ -9,6 +9,10 @@ before_build:
 build:
   project: Hearthstone Collection Tracker.sln
   verbosity: minimal
+assembly_info:
+  patch: true
+  file: AssemblyInfo.cs
+  assembly_version: '{version}'
 artifacts:
 - path: Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll
   name: Release-dll
