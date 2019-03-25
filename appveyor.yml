@@ -13,10 +13,14 @@ assembly_info:
   patch: true
   file: AssemblyInfo.cs
   assembly_version: '$(appveyor_build_version)'
+after_build:
+  7z a HearthstoneCollectionTracker.zip %APPVEYOR_BUILD_FOLDER%\Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll
 artifacts:
-- path: Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll
-  name: Release-dll
-- path: Hearthstone Collection Tracker\bin\x86\Debug\HearthstoneCollectionTracker.dll
-  name: Debug-dll
-- path: Hearthstone Collection Tracker\bin\x86\Debug\HearthstoneCollectionTracker.pdb
-  name: Debug-pdb
+  - path: HearthstoneCollectionTracker.zip
+    name: HearthstoneCollectionTracker
+#- path: Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll
+#  name: Release-dll
+#- path: Hearthstone Collection Tracker\bin\x86\Debug\HearthstoneCollectionTracker.dll
+#  name: Debug-dll
+#- path: Hearthstone Collection Tracker\bin\x86\Debug\HearthstoneCollectionTracker.pdb
+#  name: Debug-pdb
