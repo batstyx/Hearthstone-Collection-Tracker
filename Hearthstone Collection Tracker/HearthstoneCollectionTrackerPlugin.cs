@@ -13,6 +13,7 @@ using System.Windows.Controls;
 using HearthMirror.Enums;
 using Hearthstone_Deck_Tracker.Enums.Hearthstone;
 using Hearthstone_Deck_Tracker.Utility.Logging;
+using System.Reflection;
 
 namespace Hearthstone_Collection_Tracker
 {
@@ -178,7 +179,9 @@ This version built from https://github.com/batstyx/Hearthstone-Collection-Tracke
 
         public string Author => "Vasilev Konstantin & the Community";
 
-        public static readonly Version PluginVersion = new Version(0, 8, 5);
+        public static readonly Version AssemblyVersion = Assembly.GetExecutingAssembly().GetName().Version;
+
+        public static readonly Version PluginVersion = new Version(AssemblyVersion.Major, AssemblyVersion.Minor, AssemblyVersion.Revision);
 
         public Version Version => PluginVersion;
 
