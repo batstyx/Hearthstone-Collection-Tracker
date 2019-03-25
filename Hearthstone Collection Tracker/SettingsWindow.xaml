@@ -8,7 +8,7 @@
         xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Icon="Internal\HSCollection.ico"
-        Title="Settings" Width="350" Height="325">
+        Title="Settings" Width="350" Height="340">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
