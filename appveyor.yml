@@ -14,7 +14,7 @@ assembly_info:
   file: AssemblyInfo.cs
   assembly_version: '$(appveyor_build_version)'
 after_build:
-  7z a HearthstoneCollectionTracker.zip "%APPVEYOR_BUILD_FOLDER%Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll"
+  7z a HearthstoneCollectionTracker.zip "%APPVEYOR_BUILD_FOLDER%\Hearthstone Collection Tracker\bin\x86\Release\HearthstoneCollectionTracker.dll"
 artifacts:
   - path: HearthstoneCollectionTracker.zip
     name: HearthstoneCollectionTracker
