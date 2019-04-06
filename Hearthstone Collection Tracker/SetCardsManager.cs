@@ -28,9 +28,6 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly string[] StandardSets = {
             SetNames.Classic,            
-            SetNames.JourneytoUnGoro,
-            SetNames.KnightsoftheFrozenThrone,
-            SetNames.KoboldsandCatacombs,
             SetNames.TheWitchwood,
             SetNames.TheBoomsdayProject,
             SetNames.RastakhansRumble,
