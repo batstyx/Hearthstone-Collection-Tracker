@@ -11,28 +11,30 @@ namespace Hearthstone_Collection_Tracker
     internal static class SetCardsManager
     {
         public static readonly string[] CollectableSets = {
-            SetNames.Classic,
+            SetNames.Classic,        
+            SetNames.RiseofShadows,
             SetNames.RastakhansRumble,
             SetNames.TheBoomsdayProject,
             SetNames.TheWitchwood,
             SetNames.KoboldsandCatacombs,
             SetNames.KnightsoftheFrozenThrone,
             SetNames.JourneytoUnGoro,
+            SetNames.HallofFame,            
             SetNames.MeanStreetsofGadgetzan,
             SetNames.WhispersoftheOldGods,
             SetNames.TheGrandTournament,
             SetNames.GoblinsvsGnomes,
-            SetNames.HallofFame,
         };
 
         public static readonly string[] StandardSets = {
-            SetNames.Classic,
+            SetNames.Classic,            
             SetNames.JourneytoUnGoro,
             SetNames.KnightsoftheFrozenThrone,
             SetNames.KoboldsandCatacombs,
             SetNames.TheWitchwood,
             SetNames.TheBoomsdayProject,
             SetNames.RastakhansRumble,
+            SetNames.RiseofShadows,
         };
 
         public static List<BasicSetCollectionInfo> LoadSetsInfo(string collectionStoragePath)
