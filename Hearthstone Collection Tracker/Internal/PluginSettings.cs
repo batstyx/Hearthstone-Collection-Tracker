@@ -155,9 +155,11 @@ namespace Hearthstone_Collection_Tracker.Internal
                         }
                     },
                     ActiveAccount = "Default",
-                    CollectionWindowWidth = 395,
-                    CollectionWindowHeight = 560,
-                    DefaultShowAllCards = false
+                    CollectionWindowWidth = 825,
+                    CollectionWindowHeight = 875,
+                    DefaultShowAllCards = false,
+                    NotifyNewDeckMissingCards = true,
+                    EnableDesiredCardsFeature = true,
                 };
             }
 
