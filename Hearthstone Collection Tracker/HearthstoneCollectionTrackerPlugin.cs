@@ -14,6 +14,7 @@ using HearthMirror.Enums;
 using Hearthstone_Deck_Tracker.Enums.Hearthstone;
 using Hearthstone_Deck_Tracker.Utility.Logging;
 using System.Reflection;
+using System.IO;
 
 namespace Hearthstone_Collection_Tracker
 {
@@ -22,6 +23,9 @@ namespace Hearthstone_Collection_Tracker
         public void OnLoad()
         {
             DefaultDataUpdater.PerformUpdates();
+
+            if (!Directory.Exists(PluginDataDir))
+                Directory.CreateDirectory(PluginDataDir);
 
             Settings = PluginSettings.LoadSettings(PluginDataDir);
 
