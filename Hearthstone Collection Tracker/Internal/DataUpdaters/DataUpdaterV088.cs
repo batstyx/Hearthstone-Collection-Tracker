@@ -115,6 +115,10 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
             public bool NotifyNewDeckMissingCards { get; set; }
 
             public bool EnableDesiredCardsFeature { get; set; }
+
+            public bool EnableAutoImport { get; set; }
+
+            public bool UseDecksForDesiredCards { get; set; }
         }
 
         public class AccountSummary
