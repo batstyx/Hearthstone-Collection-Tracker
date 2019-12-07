@@ -1,4 +1,7 @@
-version: 0.8.9.{build}
+version: 0.8.10.{build}
+branches:
+  only:
+    - master
 skip_tags: true
 max_jobs: 1
 configuration: Release
