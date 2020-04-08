@@ -12,13 +12,14 @@ namespace Hearthstone_Collection_Tracker
     {
         public static readonly string[] CollectableSets = {
             SetNames.Classic,        
+            SetNames.AshesOfOutland,
             SetNames.DescentofDragons,
             SetNames.SaviorsofUldum,
             SetNames.RiseofShadows,
+            SetNames.HallofFame,
             SetNames.RastakhansRumble,
             SetNames.TheBoomsdayProject,
-            SetNames.TheWitchwood,
-            SetNames.HallofFame,
+            SetNames.TheWitchwood,            
             SetNames.KoboldsandCatacombs,
             SetNames.KnightsoftheFrozenThrone,
             SetNames.JourneytoUnGoro,
@@ -30,12 +31,10 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly string[] StandardSets = {
             SetNames.Classic,
-            SetNames.TheWitchwood,
-            SetNames.TheBoomsdayProject,
-            SetNames.RastakhansRumble,
             SetNames.RiseofShadows,
             SetNames.SaviorsofUldum,
-            SetNames.DescentofDragons
+            SetNames.DescentofDragons,
+            SetNames.AshesOfOutland,
         };
 
         public static List<BasicSetCollectionInfo> LoadSetsInfo(string collectionStoragePath)

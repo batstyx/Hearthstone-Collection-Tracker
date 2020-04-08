@@ -96,6 +96,14 @@
     <Reference Include="ControlzEx, Version=3.0.2.4, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ControlzEx.3.0.2.4\lib\net45\ControlzEx.dll</HintPath>
     </Reference>
+    <Reference Include="HearthDb, Version=17.0.0.44582, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\HearthDb.dll</HintPath>
+    </Reference>
+    <Reference Include="HearthMirror, Version=17.0.0.44582, Culture=neutral, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\lib\HearthMirror.dll</HintPath>
+    </Reference>
     <Reference Include="HearthstoneDeckTracker, Version=1.1.4.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>packages\HearthstoneDeckTracker.exe</HintPath>
@@ -219,17 +227,9 @@
     <Resource Include="Internal\HSCollection.ico" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="HearthDb.dll" />
+    <Content Include="HearthMirror.dll" />
     <Content Include="packages\HearthstoneDeckTracker.exe" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\HearthDb\HearthDb\HearthDb.csproj">
-      <Project>{7ed14243-e02b-4b94-af00-a67a62c282f0}</Project>
-      <Name>HearthDb</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\HearthMirror\HearthMirror\HearthMirror.csproj">
-      <Project>{1694a2f8-645a-4263-a6ab-fc26323fd675}</Project>
-      <Name>HearthMirror</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

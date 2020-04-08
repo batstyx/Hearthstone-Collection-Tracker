@@ -25,10 +25,12 @@ namespace Hearthstone_Collection_Tracker
         public const string RiseofShadows = "Rise of Shadows";
         public const string SaviorsofUldum = "Saviors of Uldum";
         public const string DescentofDragons = "Descent of Dragons";
+        public const string AshesOfOutland = "Ashes of Outland";
 
         public const string CurseofNaxxramas = "Curse of Naxxramas";
         public const string BlackrockMountain = "Blackrock Mountain";
         public const string LeagueofExplorers = "League of Explorers";
         public const string OneNightinKarazhan = "One Night in Karazhan";
+        public const string GalakrondsAwakening = "Galakrond’s Awakening";
     }
 }

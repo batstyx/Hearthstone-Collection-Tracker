@@ -1,4 +1,4 @@
-version: 0.8.10.{build}
+version: 0.8.11.{build}
 branches:
   only:
     - master
@@ -9,7 +9,7 @@ platform: x86
 clone_depth: 50
 image: Visual Studio 2017
 before_build:
-- cmd: bootstrap.bat
+- ps: bootstrap.ps1
 build:
   project: Hearthstone Collection Tracker.sln
   verbosity: minimal
