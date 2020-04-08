@@ -9,7 +9,7 @@ platform: x86
 clone_depth: 50
 image: Visual Studio 2017
 before_build:
-- ps: bootstrap.ps1
+- ps: .\bootstrap.ps1
 build:
   project: Hearthstone Collection Tracker.sln
   verbosity: minimal
