@@ -11,6 +11,7 @@ using System.Windows;
 using System.Windows.Controls;
 using HearthMirror.Enums;
 using Hearthstone_Deck_Tracker.Utility.Extensions;
+using Hearthstone_Collection_Tracker.ViewModels;
 
 namespace Hearthstone_Collection_Tracker
 {
@@ -145,7 +146,8 @@ namespace Hearthstone_Collection_Tracker
 			{
 				var selectedSetToImport = new KeyValuePair<string, string>("All", "").Value;
 				var collection = importObject.Import(selectedSetToImport);
-				foreach(var set in collection)
+                var setChangesList = new List<BasicSetCollectionInfo>();
+                foreach (var set in collection)
 				{
 					var existingSet = theSettings.ActiveAccountSetsInfo.FirstOrDefault(s => s.SetName == set.SetName);
 					if(existingSet == null)
@@ -154,27 +156,35 @@ namespace Hearthstone_Collection_Tracker
 					}
 					else
 					{
-						// keep desired amount
-						foreach(var card in set.Cards)
+                        var setChanges = setChangesList.FirstOrDefault(s => s.SetName == set.SetName) ?? new BasicSetCollectionInfo { SetName = set.SetName, Cards = new List<CardInCollection>(), };
+                        // keep desired amount
+                        foreach (var card in set.Cards)
 						{
 							var existingCardInfo = existingSet.Cards.FirstOrDefault(c => c.CardId == card.CardId);
 							if(existingCardInfo != null)
 							{
 								card.DesiredAmount = existingCardInfo.DesiredAmount;
+                                if (card.AmountNonGolden != existingCardInfo.AmountNonGolden || card.AmountGolden != existingCardInfo.AmountGolden)
+                                    setChanges?.Cards.Add(new CardInCollection(card.Card, card.AmountNonGolden - existingCardInfo.AmountNonGolden, card.AmountGolden - existingCardInfo.AmountGolden));
 							}
 						}
 						existingSet.Cards = set.Cards;
+                        if (setChanges.Cards.Count > 0)
+                            setChangesList.Add(setChanges);
 					}
 				}
-			}
+                if (theSettings.EnableImportHistory)
+                    ImportHistory.SaveChange(theSettings.Accounts.FirstOrDefault(a => a.AccountName == theSettings.ActiveAccount), setChangesList);
+
+            }
 			catch(ImportingException)
 			{
 				return false;
 			}
 
 
-			// save imported collection
-			HearthstoneCollectionTrackerPlugin.Settings.SaveCurrentAccount();
+			// save imported collection			
+            HearthstoneCollectionTrackerPlugin.Settings.SaveCurrentAccount();
 		    return true;
 	    }
 

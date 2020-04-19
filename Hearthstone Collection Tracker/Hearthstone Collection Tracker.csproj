@@ -141,6 +141,7 @@
     <Compile Include="Internal\DataUpdaters\IDataUpdater.cs" />
     <Compile Include="Internal\Helpers.cs" />
     <Compile Include="Internal\Importing\HearthstoneImporter.cs" />
+    <Compile Include="Internal\Importing\ImportHistory.cs" />
     <Compile Include="Internal\Importing\ImportingException.cs" />
     <Compile Include="Internal\InverseBooleanConverter.cs" />
     <Compile Include="Internal\ModuleVersion.cs" />

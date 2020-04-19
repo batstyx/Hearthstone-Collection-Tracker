@@ -8,7 +8,7 @@
         xmlns:system="clr-namespace:System;assembly=mscorlib"
         mc:Ignorable="d"
         Icon="Internal\HSCollection.ico"
-        Title="Settings" Width="350" Height="340">
+        Title="Settings" Width="350" Height="360">
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -87,6 +87,10 @@
         <CheckBox x:Name="checkBoxEnableAutoImport" IsChecked="{Binding Settings.EnableAutoImport, Mode=TwoWay}"
             Content="Enable Continuous Importing"
             ToolTip="Will import every 5 seconds while in the collection. It is not recommended to run this with multiple accounts/regions."
+            HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="checkBoxEnableImportHistory" IsChecked="{Binding Settings.EnableImportHistory, Mode=TwoWay}"
+            Content="Enable Import History"
+            ToolTip="Record changes to the collection occurring during import."
             HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
     </StackPanel>
 </controls:MetroWindow>

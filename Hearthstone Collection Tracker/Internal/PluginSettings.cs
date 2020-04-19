@@ -30,6 +30,8 @@ namespace Hearthstone_Collection_Tracker.Internal
 
 		public bool EnableAutoImport { get; set; }
 
+        public bool EnableImportHistory { get; set; }
+
         public bool UseDecksForDesiredCards { get; set; }
 
         [NonSerialized]
