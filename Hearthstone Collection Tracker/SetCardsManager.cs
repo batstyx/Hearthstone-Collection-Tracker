@@ -11,7 +11,8 @@ namespace Hearthstone_Collection_Tracker
     internal static class SetCardsManager
     {
         public static readonly string[] CollectableSets = {
-            SetNames.Classic,        
+            SetNames.Classic,       
+            SetNames.ScholomanceAcademy,
             SetNames.AshesOfOutland,
             SetNames.DescentofDragons,
             SetNames.SaviorsofUldum,
@@ -35,6 +36,7 @@ namespace Hearthstone_Collection_Tracker
             SetNames.SaviorsofUldum,
             SetNames.DescentofDragons,
             SetNames.AshesOfOutland,
+            SetNames.ScholomanceAcademy,
         };
 
         public static List<BasicSetCollectionInfo> LoadSetsInfo(string collectionStoragePath)

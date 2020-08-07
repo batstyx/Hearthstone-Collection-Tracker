@@ -26,6 +26,7 @@ namespace Hearthstone_Collection_Tracker
         public const string SaviorsofUldum = "Saviors of Uldum";
         public const string DescentofDragons = "Descent of Dragons";
         public const string AshesOfOutland = "Ashes of Outland";
+        public const string ScholomanceAcademy = "Scholomance Academy";
 
         public const string CurseofNaxxramas = "Curse of Naxxramas";
         public const string BlackrockMountain = "Blackrock Mountain";
