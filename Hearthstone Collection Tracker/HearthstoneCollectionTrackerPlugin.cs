@@ -201,12 +201,16 @@ This version built from https://github.com/batstyx/Hearthstone-Collection-Tracke
             {
                 MainWindow = new MainWindow
                 {
+                    Left = Settings.CollectionWindowLeft,
+                    Top = Settings.CollectionWindowTop,
                     Width = Settings.CollectionWindowWidth,
                     Height = Settings.CollectionWindowHeight,
                     Filter = {OnlyMissing = !Settings.DefaultShowAllCards}
                 };
                 MainWindow.Closed += (sender, args) =>
                 {
+                    Settings.CollectionWindowLeft = MainWindow.Left;
+                    Settings.CollectionWindowTop = MainWindow.Top;
                     Settings.CollectionWindowWidth = MainWindow.Width;
                     Settings.CollectionWindowHeight = MainWindow.Height;
                     if (MainWindow.Filter != null)
