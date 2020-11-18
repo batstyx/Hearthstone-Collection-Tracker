@@ -106,6 +106,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Madness at the Darkmoon Faire.
+        /// </summary>
+        internal static string DARKMOON_FAIRE {
+            get {
+                return ResourceManager.GetString("DARKMOON_FAIRE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Demon Hunter Initiate.
         /// </summary>
         internal static string DEMON_HUNTER_INITIATE {

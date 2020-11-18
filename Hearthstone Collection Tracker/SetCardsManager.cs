@@ -15,6 +15,7 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.EXPERT1,        // Classic
+            CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
             CardSet.DRAGONS,        // DescentofDragons
@@ -41,6 +42,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.DRAGONS,        // DescentofDragons
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
+            CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
         };
 
         public static List<BasicSetCollectionInfo> LoadSetsInfo(string collectionStoragePath)

@@ -132,6 +132,9 @@
   <data name="DALARAN" xml:space="preserve">
     <value>Rise of Shadows</value>
   </data>
+  <data name="DARKMOON_FAIRE" xml:space="preserve">
+    <value>Madness at the Darkmoon Faire</value>
+  </data>
   <data name="DEMON_HUNTER_INITIATE" xml:space="preserve">
     <value>Demon Hunter Initiate</value>
   </data>
