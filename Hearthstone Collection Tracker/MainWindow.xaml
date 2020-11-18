@@ -148,11 +148,14 @@
         <StackPanel>
             <Grid>
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
+                    <ColumnDefinition Width="200"></ColumnDefinition>
                     <ColumnDefinition Width="*"></ColumnDefinition>
                 </Grid.ColumnDefinitions>
                 <Button Grid.Column="0" Click="ManageAllCards_Click" Margin="10, 5">Manage All Cards</Button>
                 <Button Grid.Column="1" Click="ManageStandardCards_Click" Margin="10, 5">Manage Standard Cards</Button>
+                <Button Grid.Column="2" Click="ManageSelectedCards_Click" Margin="10, 5">Manage Open Card Sets</Button>
             </Grid>
             <WrapPanel HorizontalAlignment="Center" Name="MainWrapPanel">
                 <ItemsControl x:Name="SetStats" Background="DarkGray" Foreground="White" HorizontalAlignment="Left" ItemsSource="{Binding SetsInfo}">

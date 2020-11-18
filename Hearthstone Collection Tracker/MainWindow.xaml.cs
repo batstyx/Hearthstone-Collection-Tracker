@@ -344,6 +344,12 @@ namespace Hearthstone_Collection_Tracker
             var collection = new TrulyObservableCollection<CardInCollection>(SetsInfo.Where(s => s.IsStandardSet).SelectMany(si => si.SetCards).ToList());
             OpenCollectionForEditing(collection);
         }
+
+        private void ManageSelectedCards_Click(object sender, RoutedEventArgs e)
+        {
+            var collection = new TrulyObservableCollection<CardInCollection>(SetsInfo.Where(s => s.IsSelected).SelectMany(si => si.SetCards).ToList());
+            OpenCollectionForEditing(collection);
+        }
     }
 
     internal class CardInCollectionComparer : IComparer

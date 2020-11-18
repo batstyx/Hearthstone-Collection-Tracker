@@ -32,7 +32,18 @@ namespace Hearthstone_Collection_Tracker.ViewModels
 
         #region Properties
 
-        public bool IsStandardSet { get; private set; }
+        public bool IsSelected { get; set; }
+
+        private bool _IsStandardSet;
+        public bool IsStandardSet
+        {
+            get => _IsStandardSet;
+            private set
+            {
+                _IsStandardSet = value;
+                IsSelected = _IsStandardSet;
+            }
+        }
 
         private string _setName;
         public string SetName
