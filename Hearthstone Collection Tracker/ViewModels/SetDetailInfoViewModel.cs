@@ -1,4 +1,6 @@
-﻿using Hearthstone_Collection_Tracker.Internal;
+﻿using HearthDb.Enums;
+using Hearthstone_Collection_Tracker.Internal;
+using Hearthstone_Collection_Tracker.Properties;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -45,25 +47,22 @@ namespace Hearthstone_Collection_Tracker.ViewModels
             }
         }
 
-        private string _setName;
-        public string SetName
+        private CardSet _CardSet;
+        public CardSet CardSet
         {
-            get
-            {
-                return _setName;
-            }
+            get => _CardSet;
             set
             {
-                _setName = value;
+                _CardSet = value;
                 IsStandardSet = SetCardsManager.StandardSets.Contains(value);
             }
-        }
+        }                   
 
         public string SetDisplayingName
         {
             get
             {
-                return IsStandardSet ? SetName : SetName + " (Wild)";
+                return IsStandardSet ? Strings.GetCardSetName(CardSet) : Strings.GetCardSetName(CardSet) + " (Wild)";
             }
         }
 

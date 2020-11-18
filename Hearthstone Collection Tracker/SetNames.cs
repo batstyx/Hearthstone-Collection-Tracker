@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Hearthstone_Collection_Tracker
 {
+    [Obsolete("Use Strings.GetCardSetName method instead")]
     internal class SetNames
     {
         public const string Classic = "Classic";
@@ -33,5 +34,7 @@ namespace Hearthstone_Collection_Tracker
         public const string LeagueofExplorers = "League of Explorers";
         public const string OneNightinKarazhan = "One Night in Karazhan";
         public const string GalakrondsAwakening = "Galakrond’s Awakening";
+
+
     }
 }

@@ -11,6 +11,7 @@ namespace Hearthstone_Collection_Tracker.Internal.DataUpdaters
         public static IEnumerable<IDataUpdater> Updaters = new List<IDataUpdater>()
         {            
             new DataUpdaterV088(),
+            new DataUpdaterV0110(),
         };
 
 

@@ -92,7 +92,7 @@ namespace Hearthstone_Collection_Tracker
 
             foreach (var deckCard in deck.Cards)
             {
-                var cardSet = Settings.ActiveAccountSetsInfo.FirstOrDefault(set => set.SetName == deckCard.Set);
+                var cardSet = Settings.ActiveAccountSetsInfo.FirstOrDefault(set => set.CardSet == deckCard.CardSet);
                 var collectionCard = cardSet?.Cards.FirstOrDefault(c => c.CardId == deckCard.Id);
                 if (collectionCard == null)
                 {

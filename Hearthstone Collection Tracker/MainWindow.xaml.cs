@@ -15,6 +15,7 @@ using System.Windows.Controls;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Windows.Media;
+using Hearthstone_Collection_Tracker.Properties;
 
 namespace Hearthstone_Collection_Tracker
 {
@@ -300,7 +301,7 @@ namespace Hearthstone_Collection_Tracker
         {
             HearthstoneCollectionTrackerPlugin.Settings.SaveCurrentAccount(SetsInfo.Select(s => new BasicSetCollectionInfo
             {
-                SetName = s.SetName,
+                CardSet = s.CardSet,
                 Cards = s.SetCards.ToList()
             }).ToList());
         }
@@ -328,8 +329,8 @@ namespace Hearthstone_Collection_Tracker
 
             this.SetsInfo = SetCardsManager.CollectableSets.Select(s => new SetDetailInfoViewModel
             {
-                SetName = s,
-                SetCards = new TrulyObservableCollection<CardInCollection>(HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Where(set => set.SetName == s).FirstOrDefault().Cards.ToList()),
+                CardSet = s,
+                SetCards = new TrulyObservableCollection<CardInCollection>(HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Where(set => set.CardSet == s).FirstOrDefault().Cards.ToList()),
             }).ToList();
         }
 

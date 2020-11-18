@@ -1,4 +1,6 @@
-﻿using Hearthstone_Collection_Tracker.Internal;
+﻿using HearthDb.Enums;
+using Hearthstone_Collection_Tracker.Internal;
+using Hearthstone_Collection_Tracker.Properties;
 using Hearthstone_Collection_Tracker.ViewModels;
 using Hearthstone_Deck_Tracker;
 using Hearthstone_Deck_Tracker.Hearthstone;
@@ -10,33 +12,35 @@ namespace Hearthstone_Collection_Tracker
 {
     internal static class SetCardsManager
     {
-        public static readonly string[] CollectableSets = {
-            SetNames.Classic,       
-            SetNames.ScholomanceAcademy,
-            SetNames.AshesOfOutland,
-            SetNames.DescentofDragons,
-            SetNames.SaviorsofUldum,
-            SetNames.RiseofShadows,
-            SetNames.HallofFame,
-            SetNames.RastakhansRumble,
-            SetNames.TheBoomsdayProject,
-            SetNames.TheWitchwood,            
-            SetNames.KoboldsandCatacombs,
-            SetNames.KnightsoftheFrozenThrone,
-            SetNames.JourneytoUnGoro,
-            SetNames.MeanStreetsofGadgetzan,
-            SetNames.WhispersoftheOldGods,
-            SetNames.TheGrandTournament,
-            SetNames.GoblinsvsGnomes,
+        public static readonly CardSet[] CollectableSets =
+        {
+            CardSet.EXPERT1,        // Classic
+            CardSet.SCHOLOMANCE,    // ScholomanceAcademy
+            CardSet.BLACK_TEMPLE,   // AshesOfOutland
+            CardSet.DRAGONS,        // DescentofDragons
+            CardSet.ULDUM,          // SaviorsofUldum
+            CardSet.DALARAN,        // RiseofShadows
+            CardSet.REWARD,         // HallofFame
+            CardSet.TROLL,          // RastakhansRumble
+            CardSet.BOOMSDAY,       // TheBoomsdayProject
+            CardSet.GILNEAS,        // TheWitchwood
+            CardSet.LOOTAPALOOZA,   // KoboldsandCatacombs
+            CardSet.ICECROWN,       // KnightsoftheFrozenThrone
+            CardSet.UNGORO,         // JourneytoUnGoro
+            CardSet.GANGS,          // MeanStreetsofGadgetzan
+            CardSet.OG,             // WhispersoftheOldGods
+            CardSet.TGT,            // TheGrandTournament
+            CardSet.GVG,            // GoblinsvsGnomes
         };
 
-        public static readonly string[] StandardSets = {
-            SetNames.Classic,
-            SetNames.RiseofShadows,
-            SetNames.SaviorsofUldum,
-            SetNames.DescentofDragons,
-            SetNames.AshesOfOutland,
-            SetNames.ScholomanceAcademy,
+        public static readonly CardSet[] StandardSets =
+        {
+            CardSet.EXPERT1,        // Classic
+            CardSet.DALARAN,        // RiseofShadows
+            CardSet.ULDUM,          // SaviorsofUldum
+            CardSet.DRAGONS,        // DescentofDragons
+            CardSet.BLACK_TEMPLE,   // AshesOfOutland
+            CardSet.SCHOLOMANCE,    // ScholomanceAcademy
         };
 
         public static List<BasicSetCollectionInfo> LoadSetsInfo(string collectionStoragePath)
@@ -52,13 +56,13 @@ namespace Hearthstone_Collection_Tracker
                     collection = setInfos;
                     foreach (var set in CollectableSets)
                     {
-                        var currentSetCards = cards.Where(c => c.Set.Equals(set, StringComparison.InvariantCultureIgnoreCase));
-                        var setInfo = setInfos.FirstOrDefault(si => si.SetName.Equals(set, StringComparison.InvariantCultureIgnoreCase));
+                        var currentSetCards = cards.Where(c => c.CardSet.Equals(set));
+                        var setInfo = setInfos.FirstOrDefault(si => si.CardSet.Equals(set));
                         if (setInfo == null)
                         {
                             collection.Add(new BasicSetCollectionInfo()
                             {
-                                SetName = set,
+                                CardSet = set,
                                 Cards = currentSetCards.Select(c => new CardInCollection(c)).ToList()
                             });
                         }
@@ -95,8 +99,8 @@ namespace Hearthstone_Collection_Tracker
             var cards = Database.GetActualCards();
             var setCards = CollectableSets.Select(set => new BasicSetCollectionInfo()
             {
-                SetName = set,
-                Cards = cards.Where(c => c.Set == set)
+                CardSet = set,
+                Cards = cards.Where(c => c.CardSet == set)
                         .Select(c => new CardInCollection(c))
                         .ToList()
             }).ToList();

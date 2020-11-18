@@ -37,8 +37,9 @@ namespace Hearthstone_Collection_Tracker
             UpdateAccountsComboBox();
 
             this.DataContext = this;
-            var setsOption = SetCardsManager.CollectableSets.Select(s => new KeyValuePair<string, string>(s, s)).ToList();
-            setsOption.Insert(0, new KeyValuePair<string, string>("All", null));
+            //What does this even do???
+            //var setsOption = SetCardsManager.CollectableSets.Select(s => new KeyValuePair<string, string>(s, s)).ToList();
+            //setsOption.Insert(0, new KeyValuePair<string, string>("All", null));
             CheckboxUseDecksForDesiredCards.IsEnabled = CheckboxEnableDesiredCardsFeature.IsChecked.Value;
         }
 
@@ -144,19 +145,18 @@ namespace Hearthstone_Collection_Tracker
 			var importObject = new HearthstoneImporter();
 			try
 			{
-				var selectedSetToImport = new KeyValuePair<string, string>("All", "").Value;
-				var collection = importObject.Import(selectedSetToImport);
+				var collection = importObject.Import();
                 var setChangesList = new List<BasicSetCollectionInfo>();
                 foreach (var set in collection)
 				{
-					var existingSet = theSettings.ActiveAccountSetsInfo.FirstOrDefault(s => s.SetName == set.SetName);
+					var existingSet = theSettings.ActiveAccountSetsInfo.FirstOrDefault(s => s.CardSet == set.CardSet);
 					if(existingSet == null)
 					{
 						theSettings.ActiveAccountSetsInfo.Add(set);
 					}
 					else
 					{
-                        var setChanges = setChangesList.FirstOrDefault(s => s.SetName == set.SetName) ?? new BasicSetCollectionInfo { SetName = set.SetName, Cards = new List<CardInCollection>(), };
+                        var setChanges = setChangesList.FirstOrDefault(s => s.CardSet == set.CardSet) ?? new BasicSetCollectionInfo { CardSet = set.CardSet, Cards = new List<CardInCollection>(), };
                         // keep desired amount
                         foreach (var card in set.Cards)
 						{

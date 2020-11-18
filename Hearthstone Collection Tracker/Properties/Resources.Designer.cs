@@ -59,5 +59,221 @@ namespace Hearthstone_Collection_Tracker.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ashes of Outland.
+        /// </summary>
+        internal static string BLACK_TEMPLE {
+            get {
+                return ResourceManager.GetString("BLACK_TEMPLE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Boomsday Project.
+        /// </summary>
+        internal static string BOOMSDAY {
+            get {
+                return ResourceManager.GetString("BOOMSDAY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blackrock Mountain.
+        /// </summary>
+        internal static string BRM {
+            get {
+                return ResourceManager.GetString("BRM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to  Basic.
+        /// </summary>
+        internal static string CORE {
+            get {
+                return ResourceManager.GetString("CORE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rise of Shadows.
+        /// </summary>
+        internal static string DALARAN {
+            get {
+                return ResourceManager.GetString("DALARAN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Demon Hunter Initiate.
+        /// </summary>
+        internal static string DEMON_HUNTER_INITIATE {
+            get {
+                return ResourceManager.GetString("DEMON_HUNTER_INITIATE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Descent of Dragons.
+        /// </summary>
+        internal static string DRAGONS {
+            get {
+                return ResourceManager.GetString("DRAGONS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classic.
+        /// </summary>
+        internal static string EXPERT1 {
+            get {
+                return ResourceManager.GetString("EXPERT1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Mean Streets of Gadgetzan.
+        /// </summary>
+        internal static string GANGS {
+            get {
+                return ResourceManager.GetString("GANGS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Witchwood.
+        /// </summary>
+        internal static string GILNEAS {
+            get {
+                return ResourceManager.GetString("GILNEAS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Goblins vs Gnomes.
+        /// </summary>
+        internal static string GVG {
+            get {
+                return ResourceManager.GetString("GVG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Knights of the Frozen Throne.
+        /// </summary>
+        internal static string ICECROWN {
+            get {
+                return ResourceManager.GetString("ICECROWN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to One Night in Karazhan.
+        /// </summary>
+        internal static string KARA {
+            get {
+                return ResourceManager.GetString("KARA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to League of Explorers.
+        /// </summary>
+        internal static string LOE {
+            get {
+                return ResourceManager.GetString("LOE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kobolds and Catacombs.
+        /// </summary>
+        internal static string LOOTAPALOOZA {
+            get {
+                return ResourceManager.GetString("LOOTAPALOOZA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Curse of Naxxramas.
+        /// </summary>
+        internal static string NAXX {
+            get {
+                return ResourceManager.GetString("NAXX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whispers of the Old Gods.
+        /// </summary>
+        internal static string OG {
+            get {
+                return ResourceManager.GetString("OG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hall of Fame.
+        /// </summary>
+        internal static string REWARD {
+            get {
+                return ResourceManager.GetString("REWARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Scholomance Academy.
+        /// </summary>
+        internal static string SCHOLOMANCE {
+            get {
+                return ResourceManager.GetString("SCHOLOMANCE", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Grand Tournament.
+        /// </summary>
+        internal static string TGT {
+            get {
+                return ResourceManager.GetString("TGT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Rastakhan&apos;s Rumble.
+        /// </summary>
+        internal static string TROLL {
+            get {
+                return ResourceManager.GetString("TROLL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saviors of Uldum.
+        /// </summary>
+        internal static string ULDUM {
+            get {
+                return ResourceManager.GetString("ULDUM", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Journey to Un&apos;Goro.
+        /// </summary>
+        internal static string UNGORO {
+            get {
+                return ResourceManager.GetString("UNGORO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Galakrond&apos;s Awakening.
+        /// </summary>
+        internal static string YEAR_OF_THE_DRAGON {
+            get {
+                return ResourceManager.GetString("YEAR_OF_THE_DRAGON", resourceCulture);
+            }
+        }
     }
 }
