@@ -38,6 +38,7 @@ namespace Hearthstone_Collection_Tracker
                 {
                     mainWindow.SetStats.ItemsSource = null;
                     mainWindow.GetSetsInfo();
+                    mainWindow.GetAccountInfo();
                     mainWindow.SetStats.ItemsSource = mainWindow.SetsInfo;
                 }
             }
@@ -50,6 +51,7 @@ namespace Hearthstone_Collection_Tracker
 	        try
 	        {
 				this.GetSetsInfo();
+                this.GetAccountInfo();
 
 				this.MaxHeight = SystemParameters.PrimaryScreenHeight;
 				InitializeComponent();
@@ -58,13 +60,6 @@ namespace Hearthstone_Collection_Tracker
 				{
 					HandleFilterChange(sender, args);
 				};
-
-				string activeAccount = HearthstoneCollectionTrackerPlugin.Settings.ActiveAccount;
-				Title = "Collection Tracker";
-				if(!string.IsNullOrEmpty(activeAccount))
-				{
-					Title += " (" + activeAccount + ")";
-				}
             }
 			catch(Exception)
 			{
@@ -316,6 +311,20 @@ namespace Hearthstone_Collection_Tracker
 
             MainWrapPanel.HorizontalAlignment = FlyoutCollection.IsOpen
                 ? HorizontalAlignment.Left : HorizontalAlignment.Center;
+        }
+
+        static readonly string DefaultTitle = "CollectionTracker";
+        private void GetAccountInfo()
+        {
+            var activeAccount = HearthstoneCollectionTrackerPlugin.Settings.ActiveAccount;
+            if (string.IsNullOrEmpty(activeAccount))
+            {
+                Title = DefaultTitle;
+            }
+            else
+            { 
+                Title = $"{DefaultTitle} ({activeAccount})";
+            }
         }
 
         private void GetSetsInfo()

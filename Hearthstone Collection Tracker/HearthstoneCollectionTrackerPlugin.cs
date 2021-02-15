@@ -29,20 +29,28 @@ namespace Hearthstone_Collection_Tracker
 
             Settings = PluginSettings.LoadSettings(PluginDataDir);
 
-            MainMenuItem = new PluginMenuItem {Header = Name};
-            MainMenuItem.Click += (sender, args) =>
+            MainMenuItem = new PluginMenuItem {Header = "Collections"};
+            foreach (var account in Settings.Accounts)
             {
-                if (MainWindow == null)
+                var menuItem = new PluginMenuItem { Header = account.AccountName, };
+                menuItem.Click += (sender, args) =>
                 {
-                    InitializeMainWindow();
-                    Debug.Assert(MainWindow != null, "_mainWindow != null");
-                    MainWindow.Show();
-                }
-                else
-                {
-                    MainWindow.Activate();
-                }
-            };
+                    var selectedAccount = menuItem.Header as string;
+                    if (Settings.ActiveAccount != selectedAccount) Settings.SetActiveAccount(selectedAccount);
+                    if (MainWindow == null)
+                    {
+                        InitializeMainWindow();
+                        Debug.Assert(MainWindow != null, "_mainWindow != null");
+                        MainWindow.Show();
+                    }
+                    else
+                    {
+                        MainWindow.Refresh();
+                        MainWindow.Activate();
+                    }
+                };
+                MainMenuItem.Items.Add(menuItem);
+            }
 
             Hearthstone_Deck_Tracker.API.DeckManagerEvents.OnDeckCreated.Add(HandleHearthstoneDeckUpdated);
             Hearthstone_Deck_Tracker.API.DeckManagerEvents.OnDeckUpdated.Add(HandleHearthstoneDeckUpdated);
