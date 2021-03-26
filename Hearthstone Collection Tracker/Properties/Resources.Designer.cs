@@ -160,11 +160,11 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Goblins vs Gnomes.
+        ///   Looks up a localized string similar to Hall of Fame.
         /// </summary>
-        internal static string GVG {
+        internal static string HOF {
             get {
-                return ResourceManager.GetString("GVG", resourceCulture);
+                return ResourceManager.GetString("HOF", resourceCulture);
             }
         }
         
@@ -223,11 +223,11 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hall of Fame.
+        ///   Looks up a localized string similar to Goblins vs Gnomes.
         /// </summary>
-        internal static string REWARD {
+        internal static string PE1 {
             get {
-                return ResourceManager.GetString("REWARD", resourceCulture);
+                return ResourceManager.GetString("PE1", resourceCulture);
             }
         }
         
@@ -246,6 +246,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         internal static string TGT {
             get {
                 return ResourceManager.GetString("TGT", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forged in the Barrens.
+        /// </summary>
+        internal static string THE_BARRENS {
+            get {
+                return ResourceManager.GetString("THE_BARRENS", resourceCulture);
             }
         }
         
@@ -282,6 +291,78 @@ namespace Hearthstone_Collection_Tracker.Properties {
         internal static string YEAR_OF_THE_DRAGON {
             get {
                 return ResourceManager.GetString("YEAR_OF_THE_DRAGON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Dragon.
+        /// </summary>
+        internal static string ZODIACYEAR_DRAGON {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_DRAGON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Gryphon.
+        /// </summary>
+        internal static string ZODIACYEAR_GRYPHON {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_GRYPHON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string ZODIACYEAR_INVALID {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_INVALID", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Kraken.
+        /// </summary>
+        internal static string ZODIACYEAR_KRAKEN {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_KRAKEN", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Mammoth.
+        /// </summary>
+        internal static string ZODIACYEAR_MAMMOTH {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_MAMMOTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Phoenix.
+        /// </summary>
+        internal static string ZODIACYEAR_PHOENIX {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_PHOENIX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Years 1 &amp; 2.
+        /// </summary>
+        internal static string ZODIACYEAR_PRE_STANDARD {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_PRE_STANDARD", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Raven.
+        /// </summary>
+        internal static string ZODIACYEAR_RAVEN {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_RAVEN", resourceCulture);
             }
         }
     }

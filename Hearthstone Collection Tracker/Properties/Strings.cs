@@ -8,6 +8,8 @@
         public static string Get(string key) => LocalizeDictionary.Instance.GetLocalizedObject(LibraryInfo.Name, "Resources", key, LocalizeDictionary.Instance.Culture)?.ToString();
 
         public static string GetCardSetName(CardSet cardSet) => Get(cardSet.ToString());
+
+        public static string GetZodiacYearName(ZodiacYear zodiacYear) => Get($"ZODIACYEAR_{zodiacYear}");
     }
 
 }

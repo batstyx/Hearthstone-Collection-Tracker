@@ -150,8 +150,8 @@
   <data name="GILNEAS" xml:space="preserve">
     <value>The Witchwood</value>
   </data>
-  <data name="GVG" xml:space="preserve">
-    <value>Goblins vs Gnomes</value>
+  <data name="HOF" xml:space="preserve">
+    <value>Hall of Fame</value>
   </data>
   <data name="ICECROWN" xml:space="preserve">
     <value>Knights of the Frozen Throne</value>
@@ -171,14 +171,17 @@
   <data name="OG" xml:space="preserve">
     <value>Whispers of the Old Gods</value>
   </data>
-  <data name="REWARD" xml:space="preserve">
-    <value>Hall of Fame</value>
+  <data name="PE1" xml:space="preserve">
+    <value>Goblins vs Gnomes</value>
   </data>
   <data name="SCHOLOMANCE" xml:space="preserve">
     <value>Scholomance Academy</value>
   </data>
   <data name="TGT" xml:space="preserve">
     <value>The Grand Tournament</value>
+  </data>
+  <data name="THE_BARRENS" xml:space="preserve">
+    <value>Forged in the Barrens</value>
   </data>
   <data name="TROLL" xml:space="preserve">
     <value>Rastakhan's Rumble</value>
@@ -191,5 +194,29 @@
   </data>
   <data name="YEAR_OF_THE_DRAGON" xml:space="preserve">
     <value>Galakrond's Awakening</value>
+  </data>
+  <data name="ZODIACYEAR_DRAGON" xml:space="preserve">
+    <value>Year of the Dragon</value>
+  </data>
+  <data name="ZODIACYEAR_GRYPHON" xml:space="preserve">
+    <value>Year of the Gryphon</value>
+  </data>
+  <data name="ZODIACYEAR_INVALID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ZODIACYEAR_KRAKEN" xml:space="preserve">
+    <value>Year of the Kraken</value>
+  </data>
+  <data name="ZODIACYEAR_MAMMOTH" xml:space="preserve">
+    <value>Year of the Mammoth</value>
+  </data>
+  <data name="ZODIACYEAR_PHOENIX" xml:space="preserve">
+    <value>Year of the Phoenix</value>
+  </data>
+  <data name="ZODIACYEAR_PRE_STANDARD" xml:space="preserve">
+    <value>Years 1 &amp; 2</value>
+  </data>
+  <data name="ZODIACYEAR_RAVEN" xml:space="preserve">
+    <value>Year of the Raven</value>
   </data>
 </root>

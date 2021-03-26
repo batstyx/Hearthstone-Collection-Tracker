@@ -62,7 +62,11 @@ namespace Hearthstone_Collection_Tracker.ViewModels
         {
             get
             {
-                return IsStandardSet ? Strings.GetCardSetName(CardSet) : Strings.GetCardSetName(CardSet) + " (Wild)";
+                var cardSetName = Strings.GetCardSetName(CardSet);
+                var zodiacYear = SetCardsManager.GetCardSetYear(CardSet);
+                var zodiacYearName = Strings.GetZodiacYearName(zodiacYear);
+                var zodiacSpacer = zodiacYear == ZodiacYear.INVALID ? "" : " - ";
+                return IsStandardSet ? $"{cardSetName}{zodiacSpacer}{zodiacYearName}" : $"{cardSetName}{zodiacSpacer}{zodiacYearName} (Wild)";
             }
         }
 

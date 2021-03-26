@@ -15,6 +15,7 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.EXPERT1,        // Classic
+            CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
@@ -43,7 +44,36 @@ namespace Hearthstone_Collection_Tracker
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
+            CardSet.THE_BARRENS,    // ForgedintheBarrens
         };
+
+        public static ZodiacYear GetCardSetYear(CardSet cardSet)
+        {
+            switch (cardSet)
+            {
+                case CardSet.EXPERT1: return ZodiacYear.INVALID;        // Classic
+                case CardSet.REWARD: return ZodiacYear.INVALID;         // HallofFame
+                case CardSet.THE_BARRENS: return ZodiacYear.GRYPHON;    // ForgedintheBarrens
+                case CardSet.DARKMOON_FAIRE: return ZodiacYear.PHOENIX; // MadnessattheDarkmoonFaire
+                case CardSet.SCHOLOMANCE: return ZodiacYear.PHOENIX;    // ScholomanceAcademy
+                case CardSet.BLACK_TEMPLE: return ZodiacYear.PHOENIX;   // AshesOfOutland
+                case CardSet.DRAGONS: return ZodiacYear.DRAGON;         // DescentofDragons
+                case CardSet.ULDUM: return ZodiacYear.DRAGON;           // SaviorsofUldum
+                case CardSet.DALARAN: return ZodiacYear.DRAGON;         // RiseofShadows               
+                case CardSet.TROLL: return ZodiacYear.RAVEN;            // RastakhansRumble
+                case CardSet.BOOMSDAY: return ZodiacYear.RAVEN;         // TheBoomsdayProject
+                case CardSet.GILNEAS: return ZodiacYear.RAVEN;          // TheWitchwood
+                case CardSet.LOOTAPALOOZA: return ZodiacYear.MAMMOTH;   // KoboldsandCatacombs
+                case CardSet.ICECROWN: return ZodiacYear.MAMMOTH;       // KnightsoftheFrozenThrone
+                case CardSet.UNGORO: return ZodiacYear.MAMMOTH;         // JourneytoUnGoro
+                case CardSet.GANGS: return ZodiacYear.KRAKEN;           // MeanStreetsofGadgetzan
+                case CardSet.OG: return ZodiacYear.KRAKEN;              // WhispersoftheOldGods
+                case CardSet.TGT: return ZodiacYear.PRE_STANDARD;       // TheGrandTournament
+                case CardSet.GVG: return ZodiacYear.PRE_STANDARD;       // GoblinsvsGnomes
+                default:
+                    return ZodiacYear.INVALID;
+            }
+        }
 
         public static List<BasicSetCollectionInfo> LoadSetsInfo(string collectionStoragePath)
         {
