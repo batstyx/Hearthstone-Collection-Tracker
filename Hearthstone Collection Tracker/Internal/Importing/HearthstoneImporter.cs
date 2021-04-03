@@ -18,8 +18,8 @@ namespace Hearthstone_Collection_Tracker.Internal.Importing
             try
             {
                 var collection = Reflection.GetCollection();
-                var goldenCollection = collection.Where(x => x.Premium);
-                var commonCollection = collection.Where(x => x.Premium == false);
+                var goldenCollection = collection.Where(x => x.PremiumType == 1);
+                var commonCollection = collection.Where(x => x.PremiumType == 0);
                 foreach(var set in sets)
                 {
                     foreach(var card in set.Cards)
