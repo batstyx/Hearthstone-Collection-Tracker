@@ -88,10 +88,11 @@ namespace Hearthstone_Collection_Tracker
 
         public FilterSettings Filter { get; set; } = new FilterSettings();
 
-        private void OpenCollectionForEditing(TrulyObservableCollection<CardInCollection> cards)
+        private void OpenCollectionForEditing(IEnumerable<CardInCollection> cards)
         {
-            CardCollectionEditor.ItemsSource = cards;
-            ListCollectionView view = (ListCollectionView)CollectionViewSource.GetDefaultView(cards);
+            var local = new TrulyObservableCollection<CardInCollection>(cards.Where(c => c.Card.Rarity != Rarity.FREE));
+            CardCollectionEditor.ItemsSource = local;
+            ListCollectionView view = (ListCollectionView)CollectionViewSource.GetDefaultView(local);
             view.Filter = CardsFilter;
             if (!view.GroupDescriptions.Any())
             {
@@ -345,20 +346,17 @@ namespace Hearthstone_Collection_Tracker
 
         private void ManageAllCards_Click(object sender, RoutedEventArgs e)
         {
-            var collection = new TrulyObservableCollection<CardInCollection>(SetsInfo.SelectMany(si => si.SetCards).ToList());
-            OpenCollectionForEditing(collection);
+            OpenCollectionForEditing(SetsInfo.SelectMany(si => si.SetCards));
         }
 
         private void ManageStandardCards_Click(object sender, RoutedEventArgs e)
         {
-            var collection = new TrulyObservableCollection<CardInCollection>(SetsInfo.Where(s => s.IsStandardSet).SelectMany(si => si.SetCards).ToList());
-            OpenCollectionForEditing(collection);
+            OpenCollectionForEditing(SetsInfo.Where(s => s.IsStandardSet).SelectMany(si => si.SetCards));
         }
 
         private void ManageSelectedCards_Click(object sender, RoutedEventArgs e)
         {
-            var collection = new TrulyObservableCollection<CardInCollection>(SetsInfo.Where(s => s.IsSelected).SelectMany(si => si.SetCards).ToList());
-            OpenCollectionForEditing(collection);
+            OpenCollectionForEditing(SetsInfo.Where(s => s.IsSelected).SelectMany(si => si.SetCards));
         }
     }
 

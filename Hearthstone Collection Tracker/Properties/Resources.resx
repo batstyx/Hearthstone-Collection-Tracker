@@ -117,79 +117,106 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="BLACK_TEMPLE" xml:space="preserve">
+  <data name="CARDSET_BLACK_TEMPLE" xml:space="preserve">
     <value>Ashes of Outland</value>
   </data>
-  <data name="BOOMSDAY" xml:space="preserve">
+  <data name="CARDSET_BOOMSDAY" xml:space="preserve">
     <value>The Boomsday Project</value>
   </data>
-  <data name="BRM" xml:space="preserve">
+  <data name="CARDSET_BRM" xml:space="preserve">
     <value>Blackrock Mountain</value>
   </data>
-  <data name="CORE" xml:space="preserve">
-    <value> Basic</value>
-  </data>
-  <data name="DALARAN" xml:space="preserve">
+  <data name="CARDSET_DALARAN" xml:space="preserve">
     <value>Rise of Shadows</value>
   </data>
-  <data name="DARKMOON_FAIRE" xml:space="preserve">
+  <data name="CARDSET_DARKMOON_FAIRE" xml:space="preserve">
     <value>Madness at the Darkmoon Faire</value>
   </data>
-  <data name="DEMON_HUNTER_INITIATE" xml:space="preserve">
+  <data name="CARDSET_DEMON_HUNTER_INITIATE" xml:space="preserve">
     <value>Demon Hunter Initiate</value>
   </data>
-  <data name="DRAGONS" xml:space="preserve">
+  <data name="CARDSET_DRAGONS" xml:space="preserve">
     <value>Descent of Dragons</value>
   </data>
-  <data name="EXPERT1" xml:space="preserve">
-    <value>Classic</value>
+  <data name="CARDSET_EXPERT1" xml:space="preserve">
+    <value>Legacy</value>
   </data>
-  <data name="GANGS" xml:space="preserve">
+  <data name="CARDSET_GANGS" xml:space="preserve">
     <value>Mean Streets of Gadgetzan</value>
   </data>
-  <data name="GILNEAS" xml:space="preserve">
+  <data name="CARDSET_GILNEAS" xml:space="preserve">
     <value>The Witchwood</value>
   </data>
-  <data name="GVG" xml:space="preserve">
-    <value>Goblins vs Gnomes</value>
-  </data>
-  <data name="ICECROWN" xml:space="preserve">
-    <value>Knights of the Frozen Throne</value>
-  </data>
-  <data name="KARA" xml:space="preserve">
-    <value>One Night in Karazhan</value>
-  </data>
-  <data name="LOE" xml:space="preserve">
-    <value>League of Explorers</value>
-  </data>
-  <data name="LOOTAPALOOZA" xml:space="preserve">
-    <value>Kobolds and Catacombs</value>
-  </data>
-  <data name="NAXX" xml:space="preserve">
-    <value>Curse of Naxxramas</value>
-  </data>
-  <data name="OG" xml:space="preserve">
-    <value>Whispers of the Old Gods</value>
-  </data>
-  <data name="REWARD" xml:space="preserve">
+  <data name="CARDSET_HOF" xml:space="preserve">
     <value>Hall of Fame</value>
   </data>
-  <data name="SCHOLOMANCE" xml:space="preserve">
+  <data name="CARDSET_ICECROWN" xml:space="preserve">
+    <value>Knights of the Frozen Throne</value>
+  </data>
+  <data name="CARDSET_KARA" xml:space="preserve">
+    <value>One Night in Karazhan</value>
+  </data>
+  <data name="CARDSET_LOE" xml:space="preserve">
+    <value>League of Explorers</value>
+  </data>
+  <data name="CARDSET_LOOTAPALOOZA" xml:space="preserve">
+    <value>Kobolds and Catacombs</value>
+  </data>
+  <data name="CARDSET_NAXX" xml:space="preserve">
+    <value>Curse of Naxxramas</value>
+  </data>
+  <data name="CARDSET_OG" xml:space="preserve">
+    <value>Whispers of the Old Gods</value>
+  </data>
+  <data name="CARDSET_PE1" xml:space="preserve">
+    <value>Goblins vs Gnomes</value>
+  </data>
+  <data name="CARDSET_SCHOLOMANCE" xml:space="preserve">
     <value>Scholomance Academy</value>
   </data>
-  <data name="TGT" xml:space="preserve">
+  <data name="CARDSET_TGT" xml:space="preserve">
     <value>The Grand Tournament</value>
   </data>
-  <data name="TROLL" xml:space="preserve">
+  <data name="CARDSET_THE_BARRENS" xml:space="preserve">
+    <value>Forged in the Barrens</value>
+  </data>
+  <data name="CARDSET_TROLL" xml:space="preserve">
     <value>Rastakhan's Rumble</value>
   </data>
-  <data name="ULDUM" xml:space="preserve">
+  <data name="CARDSET_ULDUM" xml:space="preserve">
     <value>Saviors of Uldum</value>
   </data>
-  <data name="UNGORO" xml:space="preserve">
+  <data name="CARDSET_UNGORO" xml:space="preserve">
     <value>Journey to Un'Goro</value>
+  </data>
+  <data name="CARDSET_VANILLA" xml:space="preserve">
+    <value>Classic</value>
   </data>
   <data name="YEAR_OF_THE_DRAGON" xml:space="preserve">
     <value>Galakrond's Awakening</value>
+  </data>
+  <data name="ZODIACYEAR_DRAGON" xml:space="preserve">
+    <value>Year of the Dragon</value>
+  </data>
+  <data name="ZODIACYEAR_GRYPHON" xml:space="preserve">
+    <value>Year of the Gryphon</value>
+  </data>
+  <data name="ZODIACYEAR_INVALID" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ZODIACYEAR_KRAKEN" xml:space="preserve">
+    <value>Year of the Kraken</value>
+  </data>
+  <data name="ZODIACYEAR_MAMMOTH" xml:space="preserve">
+    <value>Year of the Mammoth</value>
+  </data>
+  <data name="ZODIACYEAR_PHOENIX" xml:space="preserve">
+    <value>Year of the Phoenix</value>
+  </data>
+  <data name="ZODIACYEAR_PRE_STANDARD" xml:space="preserve">
+    <value>Years 1 &amp; 2</value>
+  </data>
+  <data name="ZODIACYEAR_RAVEN" xml:space="preserve">
+    <value>Year of the Raven</value>
   </data>
 </root>

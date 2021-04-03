@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Collections.Specialized;
 using System.ComponentModel;
+using System.Linq;
 
 namespace Hearthstone_Collection_Tracker.Internal
 {
@@ -14,12 +15,23 @@ namespace Hearthstone_Collection_Tracker.Internal
             CollectionChanged += FullObservableCollectionCollectionChanged;
         }
 
+        public TrulyObservableCollection(IEnumerable<T> collection)
+            : base(collection)
+        {
+            CollectionChanged += FullObservableCollectionCollectionChanged;
+            foreach (var item in collection.OfType<INotifyPropertyChanged>())
+            {
+                item.PropertyChanged += ItemPropertyChanged;
+            }
+        }
+
         public TrulyObservableCollection(List<T> list)
             : base(list)
         {
-            foreach (T item in list)
+            CollectionChanged += FullObservableCollectionCollectionChanged;
+            foreach (var item in list.OfType<INotifyPropertyChanged>())
             {
-                ((INotifyPropertyChanged)item).PropertyChanged += ItemPropertyChanged;
+                item.PropertyChanged += ItemPropertyChanged;
             }
         }
 
@@ -27,25 +39,23 @@ namespace Hearthstone_Collection_Tracker.Internal
         {
             if (e.NewItems != null)
             {
-                foreach (Object item in e.NewItems)
+                foreach (var item in e.NewItems.OfType<INotifyPropertyChanged>())
                 {
-                    ((INotifyPropertyChanged)item).PropertyChanged += ItemPropertyChanged;
+                    item.PropertyChanged += ItemPropertyChanged;
                 }
             }
             if (e.OldItems != null)
             {
-                foreach (Object item in e.OldItems)
+                foreach (var item in e.OldItems.OfType<INotifyPropertyChanged>())
                 {
-                    ((INotifyPropertyChanged)item).PropertyChanged -= ItemPropertyChanged;
+                    item.PropertyChanged -= ItemPropertyChanged;
                 }
             }
         }
 
         private void ItemPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            NotifyCollectionChangedEventArgs args =
-                new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Replace, sender, sender,
-                    IndexOf((T)sender));
+            var args = new NotifyCollectionChangedEventArgs(NotifyCollectionChangedAction.Replace, sender, sender, IndexOf((T)sender));
             OnCollectionChanged(args);
         }
     }

@@ -136,6 +136,7 @@
     </Compile>
     <Compile Include="HearthstoneCollectionTrackerPlugin.cs" />
     <Compile Include="Internal\CardsInDecks.cs" />
+    <Compile Include="Internal\DataUpdaters\DataUpdaterV0120.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV0110.cs" />
     <Compile Include="Internal\DataUpdaters\DataUpdaterV088.cs" />
     <Compile Include="Internal\DataUpdaters\DefaultDataUpdater.cs" />
