@@ -14,15 +14,16 @@ namespace Hearthstone_Collection_Tracker
     {
         public static readonly CardSet[] CollectableSets =
         {
-            CardSet.EXPERT1,        // Classic
             CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
+            CardSet.VANILLA,        // Classic
+            CardSet.EXPERT1,        // Legacy Classic
+            CardSet.HOF,            // HallofFame
             CardSet.DRAGONS,        // DescentofDragons
             CardSet.ULDUM,          // SaviorsofUldum
-            CardSet.DALARAN,        // RiseofShadows
-            CardSet.REWARD,         // HallofFame
+            CardSet.DALARAN,        // RiseofShadows           
             CardSet.TROLL,          // RastakhansRumble
             CardSet.BOOMSDAY,       // TheBoomsdayProject
             CardSet.GILNEAS,        // TheWitchwood
@@ -37,10 +38,7 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly CardSet[] StandardSets =
         {
-            CardSet.EXPERT1,        // Classic
-            CardSet.DALARAN,        // RiseofShadows
-            CardSet.ULDUM,          // SaviorsofUldum
-            CardSet.DRAGONS,        // DescentofDragons
+            CardSet.VANILLA,        // Classic
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
@@ -70,8 +68,7 @@ namespace Hearthstone_Collection_Tracker
                 case CardSet.OG: return ZodiacYear.KRAKEN;              // WhispersoftheOldGods
                 case CardSet.TGT: return ZodiacYear.PRE_STANDARD;       // TheGrandTournament
                 case CardSet.GVG: return ZodiacYear.PRE_STANDARD;       // GoblinsvsGnomes
-                default:
-                    return ZodiacYear.INVALID;
+                default: return ZodiacYear.INVALID;
             }
         }
 
