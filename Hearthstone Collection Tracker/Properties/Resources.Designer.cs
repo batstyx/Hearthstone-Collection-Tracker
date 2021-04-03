@@ -63,225 +63,225 @@ namespace Hearthstone_Collection_Tracker.Properties {
         /// <summary>
         ///   Looks up a localized string similar to Ashes of Outland.
         /// </summary>
-        internal static string BLACK_TEMPLE {
+        internal static string CARDSET_BLACK_TEMPLE {
             get {
-                return ResourceManager.GetString("BLACK_TEMPLE", resourceCulture);
+                return ResourceManager.GetString("CARDSET_BLACK_TEMPLE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The Boomsday Project.
         /// </summary>
-        internal static string BOOMSDAY {
+        internal static string CARDSET_BOOMSDAY {
             get {
-                return ResourceManager.GetString("BOOMSDAY", resourceCulture);
+                return ResourceManager.GetString("CARDSET_BOOMSDAY", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Blackrock Mountain.
         /// </summary>
-        internal static string BRM {
+        internal static string CARDSET_BRM {
             get {
-                return ResourceManager.GetString("BRM", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to  Basic.
-        /// </summary>
-        internal static string CORE {
-            get {
-                return ResourceManager.GetString("CORE", resourceCulture);
+                return ResourceManager.GetString("CARDSET_BRM", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Rise of Shadows.
         /// </summary>
-        internal static string DALARAN {
+        internal static string CARDSET_DALARAN {
             get {
-                return ResourceManager.GetString("DALARAN", resourceCulture);
+                return ResourceManager.GetString("CARDSET_DALARAN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Madness at the Darkmoon Faire.
         /// </summary>
-        internal static string DARKMOON_FAIRE {
+        internal static string CARDSET_DARKMOON_FAIRE {
             get {
-                return ResourceManager.GetString("DARKMOON_FAIRE", resourceCulture);
+                return ResourceManager.GetString("CARDSET_DARKMOON_FAIRE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Demon Hunter Initiate.
         /// </summary>
-        internal static string DEMON_HUNTER_INITIATE {
+        internal static string CARDSET_DEMON_HUNTER_INITIATE {
             get {
-                return ResourceManager.GetString("DEMON_HUNTER_INITIATE", resourceCulture);
+                return ResourceManager.GetString("CARDSET_DEMON_HUNTER_INITIATE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Descent of Dragons.
         /// </summary>
-        internal static string DRAGONS {
+        internal static string CARDSET_DRAGONS {
             get {
-                return ResourceManager.GetString("DRAGONS", resourceCulture);
+                return ResourceManager.GetString("CARDSET_DRAGONS", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Classic.
+        ///   Looks up a localized string similar to Legacy.
         /// </summary>
-        internal static string EXPERT1 {
+        internal static string CARDSET_EXPERT1 {
             get {
-                return ResourceManager.GetString("EXPERT1", resourceCulture);
+                return ResourceManager.GetString("CARDSET_EXPERT1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Mean Streets of Gadgetzan.
         /// </summary>
-        internal static string GANGS {
+        internal static string CARDSET_GANGS {
             get {
-                return ResourceManager.GetString("GANGS", resourceCulture);
+                return ResourceManager.GetString("CARDSET_GANGS", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The Witchwood.
         /// </summary>
-        internal static string GILNEAS {
+        internal static string CARDSET_GILNEAS {
             get {
-                return ResourceManager.GetString("GILNEAS", resourceCulture);
+                return ResourceManager.GetString("CARDSET_GILNEAS", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Hall of Fame.
         /// </summary>
-        internal static string HOF {
+        internal static string CARDSET_HOF {
             get {
-                return ResourceManager.GetString("HOF", resourceCulture);
+                return ResourceManager.GetString("CARDSET_HOF", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Knights of the Frozen Throne.
         /// </summary>
-        internal static string ICECROWN {
+        internal static string CARDSET_ICECROWN {
             get {
-                return ResourceManager.GetString("ICECROWN", resourceCulture);
+                return ResourceManager.GetString("CARDSET_ICECROWN", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to One Night in Karazhan.
         /// </summary>
-        internal static string KARA {
+        internal static string CARDSET_KARA {
             get {
-                return ResourceManager.GetString("KARA", resourceCulture);
+                return ResourceManager.GetString("CARDSET_KARA", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to League of Explorers.
         /// </summary>
-        internal static string LOE {
+        internal static string CARDSET_LOE {
             get {
-                return ResourceManager.GetString("LOE", resourceCulture);
+                return ResourceManager.GetString("CARDSET_LOE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Kobolds and Catacombs.
         /// </summary>
-        internal static string LOOTAPALOOZA {
+        internal static string CARDSET_LOOTAPALOOZA {
             get {
-                return ResourceManager.GetString("LOOTAPALOOZA", resourceCulture);
+                return ResourceManager.GetString("CARDSET_LOOTAPALOOZA", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Curse of Naxxramas.
         /// </summary>
-        internal static string NAXX {
+        internal static string CARDSET_NAXX {
             get {
-                return ResourceManager.GetString("NAXX", resourceCulture);
+                return ResourceManager.GetString("CARDSET_NAXX", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Whispers of the Old Gods.
         /// </summary>
-        internal static string OG {
+        internal static string CARDSET_OG {
             get {
-                return ResourceManager.GetString("OG", resourceCulture);
+                return ResourceManager.GetString("CARDSET_OG", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Goblins vs Gnomes.
         /// </summary>
-        internal static string PE1 {
+        internal static string CARDSET_PE1 {
             get {
-                return ResourceManager.GetString("PE1", resourceCulture);
+                return ResourceManager.GetString("CARDSET_PE1", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Scholomance Academy.
         /// </summary>
-        internal static string SCHOLOMANCE {
+        internal static string CARDSET_SCHOLOMANCE {
             get {
-                return ResourceManager.GetString("SCHOLOMANCE", resourceCulture);
+                return ResourceManager.GetString("CARDSET_SCHOLOMANCE", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to The Grand Tournament.
         /// </summary>
-        internal static string TGT {
+        internal static string CARDSET_TGT {
             get {
-                return ResourceManager.GetString("TGT", resourceCulture);
+                return ResourceManager.GetString("CARDSET_TGT", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Forged in the Barrens.
         /// </summary>
-        internal static string THE_BARRENS {
+        internal static string CARDSET_THE_BARRENS {
             get {
-                return ResourceManager.GetString("THE_BARRENS", resourceCulture);
+                return ResourceManager.GetString("CARDSET_THE_BARRENS", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Rastakhan&apos;s Rumble.
         /// </summary>
-        internal static string TROLL {
+        internal static string CARDSET_TROLL {
             get {
-                return ResourceManager.GetString("TROLL", resourceCulture);
+                return ResourceManager.GetString("CARDSET_TROLL", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Saviors of Uldum.
         /// </summary>
-        internal static string ULDUM {
+        internal static string CARDSET_ULDUM {
             get {
-                return ResourceManager.GetString("ULDUM", resourceCulture);
+                return ResourceManager.GetString("CARDSET_ULDUM", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to Journey to Un&apos;Goro.
         /// </summary>
-        internal static string UNGORO {
+        internal static string CARDSET_UNGORO {
             get {
-                return ResourceManager.GetString("UNGORO", resourceCulture);
+                return ResourceManager.GetString("CARDSET_UNGORO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Classic.
+        /// </summary>
+        internal static string CARDSET_VANILLA {
+            get {
+                return ResourceManager.GetString("CARDSET_VANILLA", resourceCulture);
             }
         }
         
