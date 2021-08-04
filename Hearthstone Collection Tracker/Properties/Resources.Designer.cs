@@ -232,6 +232,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to United in Stormwind.
+        /// </summary>
+        internal static string CARDSET_STORMWIND {
+            get {
+                return ResourceManager.GetString("CARDSET_STORMWIND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The Grand Tournament.
         /// </summary>
         internal static string CARDSET_TGT {
