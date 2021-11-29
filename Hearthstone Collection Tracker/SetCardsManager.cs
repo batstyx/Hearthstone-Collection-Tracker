@@ -14,13 +14,13 @@ namespace Hearthstone_Collection_Tracker
     {
         public static readonly CardSet[] CollectableSets =
         {
+            CardSet.VANILLA,        // Classic
             CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
-            CardSet.VANILLA,        // Classic
             CardSet.EXPERT1,        // Legacy Classic
             CardSet.HOF,            // HallofFame
             CardSet.DRAGONS,        // DescentofDragons
@@ -40,7 +40,6 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly CardSet[] StandardSets =
         {
-            CardSet.VANILLA,        // Classic
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
