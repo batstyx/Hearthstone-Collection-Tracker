@@ -14,6 +14,7 @@ namespace Hearthstone_Collection_Tracker
     {
         public static readonly CardSet[] CollectableSets =
         {
+            CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
@@ -45,6 +46,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.STORMWIND,      // UnitedinStormwind
+            CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -53,6 +55,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;        // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;         // HallofFame
+                case CardSet.ALTERAC_VALLEY: return ZodiacYear.GRYPHON; // FracturedinAlteracValley
                 case CardSet.STORMWIND: return ZodiacYear.GRYPHON;      // UnitedinStormwind
                 case CardSet.THE_BARRENS: return ZodiacYear.GRYPHON;    // ForgedintheBarrens
                 case CardSet.DARKMOON_FAIRE: return ZodiacYear.PHOENIX; // MadnessattheDarkmoonFaire
