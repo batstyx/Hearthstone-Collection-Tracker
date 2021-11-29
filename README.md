@@ -1,6 +1,6 @@
 [![Latest Release](https://img.shields.io/github/release-pre/batstyx/Hearthstone-Collection-Tracker.svg)](https://github.com/batstyx/Hearthstone-Collection-Tracker/releases)
 
-[![Build Status](https://ci.appveyor.com/api/projects/status/github/batstyx/Hearthstone-Collection-Tracker?svg=true)](https://ci.appveyor.com/project/batstyx/hearthstone-collection-tracker)
+[![Build Status](https://github.com/batstyx/Hearthstone-Collection-Tracker/actions/workflows/main.yml/badge.svg)](https://github.com/batstyx/Hearthstone-Collection-Tracker/actions/workflows/main.yml)
 
 Hearthstone-Collection-Tracker
 ========================
