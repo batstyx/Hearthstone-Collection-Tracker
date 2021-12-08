@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="CARDSET_ALTERAC_VALLEY" xml:space="preserve">
+    <value>Fractured in Alterac Valley</value>
+  </data>
   <data name="CARDSET_BLACK_TEMPLE" xml:space="preserve">
     <value>Ashes of Outland</value>
   </data>
@@ -147,6 +150,9 @@
   <data name="CARDSET_GILNEAS" xml:space="preserve">
     <value>The Witchwood</value>
   </data>
+  <data name="CARDSET_GVG" xml:space="preserve">
+    <value>Goblins vs Gnomes</value>
+  </data>
   <data name="CARDSET_HOF" xml:space="preserve">
     <value>Hall of Fame</value>
   </data>
@@ -168,13 +174,13 @@
   <data name="CARDSET_OG" xml:space="preserve">
     <value>Whispers of the Old Gods</value>
   </data>
-  <data name="CARDSET_PE1" xml:space="preserve">
-    <value>Goblins vs Gnomes</value>
-  </data>
   <data name="CARDSET_SCHOLOMANCE" xml:space="preserve">
     <value>Scholomance Academy</value>
   </data>
-  <data name="CARDSET_TGT" xml:space="preserve">
+  <data name="CARDSET_STORMWIND" xml:space="preserve">
+    <value>United in Stormwind</value>
+  </data>
+  <data name="CARDSET_TEMP1" xml:space="preserve">
     <value>The Grand Tournament</value>
   </data>
   <data name="CARDSET_THE_BARRENS" xml:space="preserve">

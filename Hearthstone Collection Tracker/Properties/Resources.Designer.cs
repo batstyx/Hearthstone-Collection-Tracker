@@ -19,7 +19,7 @@ namespace Hearthstone_Collection_Tracker.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -57,6 +57,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
             }
             set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fractured in Alterac Valley.
+        /// </summary>
+        internal static string CARDSET_ALTERAC_VALLEY {
+            get {
+                return ResourceManager.GetString("CARDSET_ALTERAC_VALLEY", resourceCulture);
             }
         }
         
@@ -151,6 +160,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Goblins vs Gnomes.
+        /// </summary>
+        internal static string CARDSET_GVG {
+            get {
+                return ResourceManager.GetString("CARDSET_GVG", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hall of Fame.
         /// </summary>
         internal static string CARDSET_HOF {
@@ -214,15 +232,6 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Goblins vs Gnomes.
-        /// </summary>
-        internal static string CARDSET_PE1 {
-            get {
-                return ResourceManager.GetString("CARDSET_PE1", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Scholomance Academy.
         /// </summary>
         internal static string CARDSET_SCHOLOMANCE {
@@ -232,11 +241,20 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to United in Stormwind.
+        /// </summary>
+        internal static string CARDSET_STORMWIND {
+            get {
+                return ResourceManager.GetString("CARDSET_STORMWIND", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to The Grand Tournament.
         /// </summary>
-        internal static string CARDSET_TGT {
+        internal static string CARDSET_TEMP1 {
             get {
-                return ResourceManager.GetString("CARDSET_TGT", resourceCulture);
+                return ResourceManager.GetString("CARDSET_TEMP1", resourceCulture);
             }
         }
         

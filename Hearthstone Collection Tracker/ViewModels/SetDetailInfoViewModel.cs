@@ -65,10 +65,20 @@ namespace Hearthstone_Collection_Tracker.ViewModels
             get
             {
                 var cardSetName = Strings.GetCardSetName(CardSet);
-                var zodiacYear = SetCardsManager.GetCardSetYear(CardSet);
-                var zodiacYearName = Strings.GetZodiacYearName(zodiacYear);
-                var zodiacSpacer = zodiacYear == ZodiacYear.INVALID ? "" : " - ";
-                return IsStandardSet ? $"{cardSetName}{zodiacSpacer}{zodiacYearName}" : $"{cardSetName}{zodiacSpacer}{zodiacYearName} (Wild)";
+                if (CardSet == CardSet.VANILLA)
+                {
+                    return cardSetName;
+                }
+                else
+                {
+                    var zodiacYear = SetCardsManager.GetCardSetYear(CardSet);
+                    var zodiacYearName = Strings.GetZodiacYearName(zodiacYear);
+                    var zodiacSpacer = zodiacYear == ZodiacYear.INVALID ? "" : " - ";
+
+                    return IsStandardSet 
+                        ? $"{cardSetName}{zodiacSpacer}{zodiacYearName}" 
+                        : $"{cardSetName}{zodiacSpacer}{zodiacYearName} (Wild)";
+                }
             }
         }
 
