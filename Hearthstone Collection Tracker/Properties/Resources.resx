@@ -186,6 +186,9 @@
   <data name="CARDSET_THE_BARRENS" xml:space="preserve">
     <value>Forged in the Barrens</value>
   </data>
+  <data name="CARDSET_THE_SUNKEN_CITY" xml:space="preserve">
+    <value>Voyage to the Sunken City</value>
+  </data>
   <data name="CARDSET_TROLL" xml:space="preserve">
     <value>Rastakhan's Rumble</value>
   </data>
