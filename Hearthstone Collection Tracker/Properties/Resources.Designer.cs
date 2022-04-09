@@ -268,6 +268,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Voyage to the Sunken City.
+        /// </summary>
+        internal static string CARDSET_THE_SUNKEN_CITY {
+            get {
+                return ResourceManager.GetString("CARDSET_THE_SUNKEN_CITY", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Rastakhan&apos;s Rumble.
         /// </summary>
         internal static string CARDSET_TROLL {
@@ -327,6 +336,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         internal static string ZODIACYEAR_GRYPHON {
             get {
                 return ResourceManager.GetString("ZODIACYEAR_GRYPHON", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Hydra.
+        /// </summary>
+        internal static string ZODIACYEAR_HYDRA {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_HYDRA", resourceCulture);
             }
         }
         

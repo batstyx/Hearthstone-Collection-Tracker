@@ -15,6 +15,7 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.VANILLA,        // Classic
+            CardSet.THE_SUNKEN_CITY,// VoyagetotheSunkenCity
             CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.THE_BARRENS,    // ForgedintheBarrens
@@ -46,6 +47,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
+            CardSet.THE_SUNKEN_CITY,// VoyagetotheSunkenCity
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -54,6 +56,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;        // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;         // HallofFame
+                case CardSet.THE_SUNKEN_CITY: return ZodiacYear.HYDRA;  // VoyagetotheSunkenCity
                 case CardSet.ALTERAC_VALLEY: return ZodiacYear.GRYPHON; // FracturedinAlteracValley
                 case CardSet.STORMWIND: return ZodiacYear.GRYPHON;      // UnitedinStormwind
                 case CardSet.THE_BARRENS: return ZodiacYear.GRYPHON;    // ForgedintheBarrens
