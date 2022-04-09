@@ -340,6 +340,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Year of the Hydra.
+        /// </summary>
+        internal static string ZODIACYEAR_HYDRA {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_HYDRA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
         internal static string ZODIACYEAR_INVALID {

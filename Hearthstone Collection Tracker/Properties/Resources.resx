@@ -210,6 +210,9 @@
   <data name="ZODIACYEAR_GRYPHON" xml:space="preserve">
     <value>Year of the Gryphon</value>
   </data>
+  <data name="ZODIACYEAR_HYDRA" xml:space="preserve">
+    <value>Year of the Hydra</value>
+  </data>
   <data name="ZODIACYEAR_INVALID" xml:space="preserve">
     <value />
   </data>
