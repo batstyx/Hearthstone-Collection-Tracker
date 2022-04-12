@@ -41,9 +41,6 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly CardSet[] StandardSets =
         {
-            CardSet.BLACK_TEMPLE,   // AshesOfOutland
-            CardSet.SCHOLOMANCE,    // ScholomanceAcademy
-            CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.THE_BARRENS,    // ForgedintheBarrens
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
