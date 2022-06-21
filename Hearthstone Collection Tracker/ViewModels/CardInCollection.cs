@@ -19,7 +19,7 @@ namespace Hearthstone_Collection_Tracker.ViewModels
             Card = card;
             AmountNonGolden = amountNonGolden;
             AmountGolden = amountGolden;
-            CopiesInDecks = CardsInDecks.Instance.CopiesInDecks(card.Name);
+            CopiesInDecks = CardsInDecks.Instance.CopiesInDecks(card.Id);
             DesiredAmount = MaxAmountInCollection;
             CardId = card.Id;
         }

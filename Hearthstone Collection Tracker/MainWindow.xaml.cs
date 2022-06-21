@@ -331,7 +331,7 @@ namespace Hearthstone_Collection_Tracker
             this.SetsInfo = SetCardsManager.CollectableSets.Select(s => new SetDetailInfoViewModel
             {
                 CardSet = s,
-                SetCards = new TrulyObservableCollection<CardInCollection>(HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Where(set => set.CardSet == s).FirstOrDefault().Cards.ToList()),
+                SetCards = new TrulyObservableCollection<CardInCollection>(HearthstoneCollectionTrackerPlugin.Settings.ActiveAccountSetsInfo.Where(set => set.CardSet == s).FirstOrDefault().Cards.Where(c => c.Card != null).ToList()),
             }).ToList();
         }
 

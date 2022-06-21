@@ -17,11 +17,9 @@ namespace Hearthstone_Collection_Tracker.Internal
         private static volatile CardsInDecks instance;
         private static object syncRoot = new Object();
 
-        private SortedDictionary<string, int> _cards;
-
         private CardsInDecks()
         {
-            this.UpdateCardsInDecks();
+            UpdateCardsInDecks();
         }
 
         public static CardsInDecks Instance
@@ -43,38 +41,33 @@ namespace Hearthstone_Collection_Tracker.Internal
             }
         }
 
-        public SortedDictionary<string, int> Cards
-        {
-            get { return _cards; }
-            set { _cards = value; }
-        }
+        private SortedDictionary<string, int> Cards { get; set; }
 
-        public int CopiesInDecks(string cardName)
+        public int CopiesInDecks(string cardId)
         {
-            if (Cards.ContainsKey(cardName))
+            if (Cards.TryGetValue(cardId, out int copiesInDecks))                
             {
-                return Cards[cardName];
+                return copiesInDecks;
             }
-
             return 0;
         }
 
         public void UpdateCardsInDecks()
         {
-            this.Cards = new SortedDictionary<string, int>();
+            Cards = new SortedDictionary<string, int>();
             var deckList = DeckList.Instance.Decks.Where(d => !d.IsArenaDeck && !d.IsBrawlDeck).ToList();
             foreach (var deck in deckList)
             {
                 foreach (var card in deck.Cards)
                 {
-                    if (this.Cards.ContainsKey(card.Name))
+                    if (Cards.ContainsKey(card.Id))
                     {
-                        int copiesOfCardInDeck = this.Cards[card.Name];
-                        this.Cards[card.Name] = Math.Max(card.Count, copiesOfCardInDeck);
+                        int copiesOfCardInDeck = Cards[card.Id];
+                        Cards[card.Id] = Math.Max(card.Count, copiesOfCardInDeck);
                     }
                     else
                     {
-                        this.Cards.Add(card.Name, card.Count);
+                        Cards.Add(card.Id, card.Count);
                     }
                 }
             }
@@ -85,9 +78,7 @@ namespace Hearthstone_Collection_Tracker.Internal
                 {
                     foreach (CardInCollection card in set.Cards)
                     {
-                        CardInCollection copy = card;
-                        int index = set.Cards.IndexOf(copy);
-                        set.Cards[index].CopiesInDecks = this.Cards.Where(c => c.Key == copy.Card.Name).FirstOrDefault().Value;
+                        card.CopiesInDecks = CopiesInDecks(card.CardId); 
                     }
                 }
             }

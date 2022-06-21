@@ -114,7 +114,7 @@ namespace Hearthstone_Collection_Tracker
                                     savedCard.Card = card;
                                     savedCard.AmountGolden = savedCard.AmountGolden.Clamp(0, savedCard.MaxAmountInCollection);
                                     savedCard.AmountNonGolden = savedCard.AmountNonGolden.Clamp(0, savedCard.MaxAmountInCollection);
-                                    savedCard.CopiesInDecks = CardsInDecks.Instance.CopiesInDecks(card.Name);
+                                    savedCard.CopiesInDecks = CardsInDecks.Instance.CopiesInDecks(card.Id);
                                 }
                             }
                         }
