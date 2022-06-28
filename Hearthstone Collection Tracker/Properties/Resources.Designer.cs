@@ -160,15 +160,6 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Goblins vs Gnomes.
-        /// </summary>
-        internal static string CARDSET_GVG {
-            get {
-                return ResourceManager.GetString("CARDSET_GVG", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Hall of Fame.
         /// </summary>
         internal static string CARDSET_HOF {
@@ -232,6 +223,24 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Goblins vs Gnomes.
+        /// </summary>
+        internal static string CARDSET_PE1 {
+            get {
+                return ResourceManager.GetString("CARDSET_PE1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Murder at Castle Nathria.
+        /// </summary>
+        internal static string CARDSET_REVENDRETH {
+            get {
+                return ResourceManager.GetString("CARDSET_REVENDRETH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Scholomance Academy.
         /// </summary>
         internal static string CARDSET_SCHOLOMANCE {
@@ -252,9 +261,9 @@ namespace Hearthstone_Collection_Tracker.Properties {
         /// <summary>
         ///   Looks up a localized string similar to The Grand Tournament.
         /// </summary>
-        internal static string CARDSET_TEMP1 {
+        internal static string CARDSET_TGT {
             get {
-                return ResourceManager.GetString("CARDSET_TEMP1", resourceCulture);
+                return ResourceManager.GetString("CARDSET_TGT", resourceCulture);
             }
         }
         

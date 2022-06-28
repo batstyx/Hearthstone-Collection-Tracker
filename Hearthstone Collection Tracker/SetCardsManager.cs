@@ -15,15 +15,16 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.VANILLA,        // Classic
+            CardSet.REVENDRETH,     // MurderatCastleNathria
             CardSet.THE_SUNKEN_CITY,// VoyagetotheSunkenCity
             CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.THE_BARRENS,    // ForgedintheBarrens
+            CardSet.EXPERT1,        // Legacy Classic
+            CardSet.HOF,            // HallofFame
             CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
             CardSet.SCHOLOMANCE,    // ScholomanceAcademy
             CardSet.BLACK_TEMPLE,   // AshesOfOutland
-            CardSet.EXPERT1,        // Legacy Classic
-            CardSet.HOF,            // HallofFame
             CardSet.DRAGONS,        // DescentofDragons
             CardSet.ULDUM,          // SaviorsofUldum
             CardSet.DALARAN,        // RiseofShadows           
@@ -45,6 +46,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.STORMWIND,      // UnitedinStormwind
             CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
             CardSet.THE_SUNKEN_CITY,// VoyagetotheSunkenCity
+            CardSet.REVENDRETH,     // MurderatCastleNathria
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -53,6 +55,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;        // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;         // HallofFame
+                case CardSet.REVENDRETH: return ZodiacYear.HYDRA;       // MurderatCastleNathria
                 case CardSet.THE_SUNKEN_CITY: return ZodiacYear.HYDRA;  // VoyagetotheSunkenCity
                 case CardSet.ALTERAC_VALLEY: return ZodiacYear.GRYPHON; // FracturedinAlteracValley
                 case CardSet.STORMWIND: return ZodiacYear.GRYPHON;      // UnitedinStormwind

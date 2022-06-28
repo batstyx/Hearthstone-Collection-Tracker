@@ -150,9 +150,6 @@
   <data name="CARDSET_GILNEAS" xml:space="preserve">
     <value>The Witchwood</value>
   </data>
-  <data name="CARDSET_GVG" xml:space="preserve">
-    <value>Goblins vs Gnomes</value>
-  </data>
   <data name="CARDSET_HOF" xml:space="preserve">
     <value>Hall of Fame</value>
   </data>
@@ -174,13 +171,19 @@
   <data name="CARDSET_OG" xml:space="preserve">
     <value>Whispers of the Old Gods</value>
   </data>
+  <data name="CARDSET_PE1" xml:space="preserve">
+    <value>Goblins vs Gnomes</value>
+  </data>
+  <data name="CARDSET_REVENDRETH" xml:space="preserve">
+    <value>Murder at Castle Nathria</value>
+  </data>
   <data name="CARDSET_SCHOLOMANCE" xml:space="preserve">
     <value>Scholomance Academy</value>
   </data>
   <data name="CARDSET_STORMWIND" xml:space="preserve">
     <value>United in Stormwind</value>
   </data>
-  <data name="CARDSET_TEMP1" xml:space="preserve">
+  <data name="CARDSET_TGT" xml:space="preserve">
     <value>The Grand Tournament</value>
   </data>
   <data name="CARDSET_THE_BARRENS" xml:space="preserve">
