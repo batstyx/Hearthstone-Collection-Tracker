@@ -150,6 +150,9 @@
   <data name="CARDSET_GILNEAS" xml:space="preserve">
     <value>The Witchwood</value>
   </data>
+  <data name="CARDSET_GVG" xml:space="preserve">
+    <value>Goblins vs Gnomes</value>
+  </data>
   <data name="CARDSET_HOF" xml:space="preserve">
     <value>Hall of Fame</value>
   </data>
@@ -174,8 +177,17 @@
   <data name="CARDSET_PE1" xml:space="preserve">
     <value>Goblins vs Gnomes</value>
   </data>
+  <data name="CARDSET_PE2" xml:space="preserve">
+    <value>The Grand Tournament</value>
+  </data>
+  <data name="CARDSET_RETURN_OF_THE_LICH_KING" xml:space="preserve">
+    <value>March of the Lich King</value>
+  </data>
   <data name="CARDSET_REVENDRETH" xml:space="preserve">
     <value>Murder at Castle Nathria</value>
+  </data>
+  <data name="CARDSET_REWARD" xml:space="preserve">
+    <value>Hall of Fame</value>
   </data>
   <data name="CARDSET_SCHOLOMANCE" xml:space="preserve">
     <value>Scholomance Academy</value>
