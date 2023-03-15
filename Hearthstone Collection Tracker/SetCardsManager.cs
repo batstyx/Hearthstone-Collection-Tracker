@@ -14,71 +14,73 @@ namespace Hearthstone_Collection_Tracker
     {
         public static readonly CardSet[] CollectableSets =
         {
-            CardSet.VANILLA,        // Classic
-            CardSet.RETURN_OF_THE_LICH_KING, // March of the Lich King
-            CardSet.REVENDRETH,     // MurderatCastleNathria
-            CardSet.THE_SUNKEN_CITY,// VoyagetotheSunkenCity
-            CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
-            CardSet.STORMWIND,      // UnitedinStormwind
-            CardSet.THE_BARRENS,    // ForgedintheBarrens
-            CardSet.EXPERT1,        // Legacy Classic
-            CardSet.HOF,            // HallofFame
-            CardSet.DARKMOON_FAIRE, // MadnessattheDarkmoonFaire
-            CardSet.SCHOLOMANCE,    // ScholomanceAcademy
-            CardSet.BLACK_TEMPLE,   // AshesOfOutland
-            CardSet.DRAGONS,        // DescentofDragons
-            CardSet.ULDUM,          // SaviorsofUldum
-            CardSet.DALARAN,        // RiseofShadows           
-            CardSet.TROLL,          // RastakhansRumble
-            CardSet.BOOMSDAY,       // TheBoomsdayProject
-            CardSet.GILNEAS,        // TheWitchwood
-            CardSet.LOOTAPALOOZA,   // KoboldsandCatacombs
-            CardSet.ICECROWN,       // KnightsoftheFrozenThrone
-            CardSet.UNGORO,         // JourneytoUnGoro
-            CardSet.GANGS,          // MeanStreetsofGadgetzan
-            CardSet.OG,             // WhispersoftheOldGods
-            CardSet.TGT,            // TheGrandTournament
-            CardSet.GVG,            // GoblinsvsGnomes
+            CardSet.VANILLA,                    // Classic
+            CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
+            CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
+            CardSet.REVENDRETH,                 // MurderatCastleNathria
+            CardSet.THE_SUNKEN_CITY,            // VoyagetotheSunkenCity
+            CardSet.ALTERAC_VALLEY,             // FracturedinAlteracValley
+            CardSet.STORMWIND,                  // UnitedinStormwind
+            CardSet.THE_BARRENS,                // ForgedintheBarrens
+            CardSet.EXPERT1,                    // Legacy Classic
+            CardSet.HOF,                        // HallofFame
+            CardSet.DARKMOON_FAIRE,             // MadnessattheDarkmoonFaire
+            CardSet.SCHOLOMANCE,                // ScholomanceAcademy
+            CardSet.BLACK_TEMPLE,               // AshesOfOutland
+            CardSet.DRAGONS,                    // DescentofDragons
+            CardSet.ULDUM,                      // SaviorsofUldum
+            CardSet.DALARAN,                    // RiseofShadows           
+            CardSet.TROLL,                      // RastakhansRumble
+            CardSet.BOOMSDAY,                   // TheBoomsdayProject
+            CardSet.GILNEAS,                    // TheWitchwood
+            CardSet.LOOTAPALOOZA,               // KoboldsandCatacombs
+            CardSet.ICECROWN,                   // KnightsoftheFrozenThrone
+            CardSet.UNGORO,                     // JourneytoUnGoro
+            CardSet.GANGS,                      // MeanStreetsofGadgetzan
+            CardSet.OG,                         // WhispersoftheOldGods
+            CardSet.TGT,                        // TheGrandTournament
+            CardSet.GVG,                        // GoblinsvsGnomes
         };
 
         public static readonly CardSet[] StandardSets =
         {
-            CardSet.THE_BARRENS,    // ForgedintheBarrens
-            CardSet.STORMWIND,      // UnitedinStormwind
-            CardSet.ALTERAC_VALLEY, // FracturedinAlteracValley
-            CardSet.THE_SUNKEN_CITY,// VoyagetotheSunkenCity
-            CardSet.REVENDRETH,     // MurderatCastleNathria
-            CardSet.RETURN_OF_THE_LICH_KING, // March of the Lich King
+            CardSet.THE_BARRENS,                // ForgedintheBarrens
+            CardSet.STORMWIND,                  // UnitedinStormwind
+            CardSet.ALTERAC_VALLEY,             // FracturedinAlteracValley
+            CardSet.THE_SUNKEN_CITY,            // VoyagetotheSunkenCity
+            CardSet.REVENDRETH,                 // MurderatCastleNathria
+            CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
+            CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
         {
             switch (cardSet)
             {
-                case CardSet.EXPERT1: return ZodiacYear.INVALID;        // Classic
-                case CardSet.REWARD: return ZodiacYear.INVALID;         // HallofFame
-                case CardSet.RETURN_OF_THE_LICH_KING: return ZodiacYear.HYDRA; // March of the Lich King
-                case CardSet.REVENDRETH: return ZodiacYear.HYDRA;       // MurderatCastleNathria
-                case CardSet.THE_SUNKEN_CITY: return ZodiacYear.HYDRA;  // VoyagetotheSunkenCity
-                case CardSet.ALTERAC_VALLEY: return ZodiacYear.GRYPHON; // FracturedinAlteracValley
-                case CardSet.STORMWIND: return ZodiacYear.GRYPHON;      // UnitedinStormwind
-                case CardSet.THE_BARRENS: return ZodiacYear.GRYPHON;    // ForgedintheBarrens
-                case CardSet.DARKMOON_FAIRE: return ZodiacYear.PHOENIX; // MadnessattheDarkmoonFaire
-                case CardSet.SCHOLOMANCE: return ZodiacYear.PHOENIX;    // ScholomanceAcademy
-                case CardSet.BLACK_TEMPLE: return ZodiacYear.PHOENIX;   // AshesOfOutland
-                case CardSet.DRAGONS: return ZodiacYear.DRAGON;         // DescentofDragons
-                case CardSet.ULDUM: return ZodiacYear.DRAGON;           // SaviorsofUldum
-                case CardSet.DALARAN: return ZodiacYear.DRAGON;         // RiseofShadows               
-                case CardSet.TROLL: return ZodiacYear.RAVEN;            // RastakhansRumble
-                case CardSet.BOOMSDAY: return ZodiacYear.RAVEN;         // TheBoomsdayProject
-                case CardSet.GILNEAS: return ZodiacYear.RAVEN;          // TheWitchwood
-                case CardSet.LOOTAPALOOZA: return ZodiacYear.MAMMOTH;   // KoboldsandCatacombs
-                case CardSet.ICECROWN: return ZodiacYear.MAMMOTH;       // KnightsoftheFrozenThrone
-                case CardSet.UNGORO: return ZodiacYear.MAMMOTH;         // JourneytoUnGoro
-                case CardSet.GANGS: return ZodiacYear.KRAKEN;           // MeanStreetsofGadgetzan
-                case CardSet.OG: return ZodiacYear.KRAKEN;              // WhispersoftheOldGods
-                case CardSet.TGT: return ZodiacYear.PRE_STANDARD;       // TheGrandTournament
-                case CardSet.GVG: return ZodiacYear.PRE_STANDARD;       // GoblinsvsGnomes
+                case CardSet.EXPERT1: return ZodiacYear.INVALID;                // Classic
+                case CardSet.REWARD: return ZodiacYear.INVALID;                 // HallofFame
+                case CardSet.RETURN_OF_THE_LICH_KING: return ZodiacYear.HYDRA;  // March of the Lich King
+                case CardSet.REVENDRETH: return ZodiacYear.HYDRA;               // MurderatCastleNathria
+                case CardSet.THE_SUNKEN_CITY: return ZodiacYear.HYDRA;          // VoyagetotheSunkenCity
+                case CardSet.ALTERAC_VALLEY: return ZodiacYear.GRYPHON;         // FracturedinAlteracValley
+                case CardSet.STORMWIND: return ZodiacYear.GRYPHON;              // UnitedinStormwind
+                case CardSet.THE_BARRENS: return ZodiacYear.GRYPHON;            // ForgedintheBarrens
+                case CardSet.DARKMOON_FAIRE: return ZodiacYear.PHOENIX;         // MadnessattheDarkmoonFaire
+                case CardSet.SCHOLOMANCE: return ZodiacYear.PHOENIX;            // ScholomanceAcademy
+                case CardSet.BLACK_TEMPLE: return ZodiacYear.PHOENIX;           // AshesOfOutland
+                case CardSet.DRAGONS: return ZodiacYear.DRAGON;                 // DescentofDragons
+                case CardSet.ULDUM: return ZodiacYear.DRAGON;                   // SaviorsofUldum
+                case CardSet.DALARAN: return ZodiacYear.DRAGON;                 // RiseofShadows               
+                case CardSet.TROLL: return ZodiacYear.RAVEN;                    // RastakhansRumble
+                case CardSet.BOOMSDAY: return ZodiacYear.RAVEN;                 // TheBoomsdayProject
+                case CardSet.GILNEAS: return ZodiacYear.RAVEN;                  // TheWitchwood
+                case CardSet.LOOTAPALOOZA: return ZodiacYear.MAMMOTH;           // KoboldsandCatacombs
+                case CardSet.ICECROWN: return ZodiacYear.MAMMOTH;               // KnightsoftheFrozenThrone
+                case CardSet.UNGORO: return ZodiacYear.MAMMOTH;                 // JourneytoUnGoro
+                case CardSet.GANGS: return ZodiacYear.KRAKEN;                   // MeanStreetsofGadgetzan
+                case CardSet.OG: return ZodiacYear.KRAKEN;                      // WhispersoftheOldGods
+                case CardSet.TGT: return ZodiacYear.PRE_STANDARD;               // TheGrandTournament
+                case CardSet.GVG: return ZodiacYear.PRE_STANDARD;               // GoblinsvsGnomes
                 default: return ZodiacYear.INVALID;
             }
         }

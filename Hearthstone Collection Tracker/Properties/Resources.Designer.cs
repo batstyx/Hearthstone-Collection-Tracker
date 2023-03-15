@@ -70,6 +70,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Festival of Legends.
+        /// </summary>
+        internal static string CARDSET_BATTLE_OF_THE_BANDS {
+            get {
+                return ResourceManager.GetString("CARDSET_BATTLE_OF_THE_BANDS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ashes of Outland.
         /// </summary>
         internal static string CARDSET_BLACK_TEMPLE {

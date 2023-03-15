@@ -120,6 +120,9 @@
   <data name="CARDSET_ALTERAC_VALLEY" xml:space="preserve">
     <value>Fractured in Alterac Valley</value>
   </data>
+  <data name="CARDSET_BATTLE_OF_THE_BANDS" xml:space="preserve">
+    <value>Festival of Legends</value>
+  </data>
   <data name="CARDSET_BLACK_TEMPLE" xml:space="preserve">
     <value>Ashes of Outland</value>
   </data>
