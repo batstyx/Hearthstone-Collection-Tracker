@@ -15,8 +15,8 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.VANILLA,                    // Classic
-            CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
-            CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
+            CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
+            CardSet.RETURN_OF_THE_LICH_KING,    // MarchoftheLichKing
             CardSet.REVENDRETH,                 // MurderatCastleNathria
             CardSet.THE_SUNKEN_CITY,            // VoyagetotheSunkenCity
             CardSet.ALTERAC_VALLEY,             // FracturedinAlteracValley
@@ -59,7 +59,8 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;                // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;                 // HallofFame
-                case CardSet.RETURN_OF_THE_LICH_KING: return ZodiacYear.HYDRA;  // March of the Lich King
+                case CardSet.BATTLE_OF_THE_BANDS: return ZodiacYear.WOLF;       // FestivalofLegends
+                case CardSet.RETURN_OF_THE_LICH_KING: return ZodiacYear.HYDRA;  // MarchoftheLichKing
                 case CardSet.REVENDRETH: return ZodiacYear.HYDRA;               // MurderatCastleNathria
                 case CardSet.THE_SUNKEN_CITY: return ZodiacYear.HYDRA;          // VoyagetotheSunkenCity
                 case CardSet.ALTERAC_VALLEY: return ZodiacYear.GRYPHON;         // FracturedinAlteracValley

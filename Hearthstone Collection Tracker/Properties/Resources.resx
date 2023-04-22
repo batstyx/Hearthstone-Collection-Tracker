@@ -249,4 +249,7 @@
   <data name="ZODIACYEAR_RAVEN" xml:space="preserve">
     <value>Year of the Raven</value>
   </data>
+  <data name="ZODIACYEAR_WOLF" xml:space="preserve">
+    <value>Year of the Wolf</value>
+  </data>
 </root>

@@ -455,5 +455,14 @@ namespace Hearthstone_Collection_Tracker.Properties {
                 return ResourceManager.GetString("ZODIACYEAR_RAVEN", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Wolf.
+        /// </summary>
+        internal static string ZODIACYEAR_WOLF {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_WOLF", resourceCulture);
+            }
+        }
     }
 }
