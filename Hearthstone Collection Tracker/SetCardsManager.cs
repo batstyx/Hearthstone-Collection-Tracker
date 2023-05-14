@@ -44,9 +44,6 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly CardSet[] StandardSets =
         {
-            CardSet.THE_BARRENS,                // ForgedintheBarrens
-            CardSet.STORMWIND,                  // UnitedinStormwind
-            CardSet.ALTERAC_VALLEY,             // FracturedinAlteracValley
             CardSet.THE_SUNKEN_CITY,            // VoyagetotheSunkenCity
             CardSet.REVENDRETH,                 // MurderatCastleNathria
             CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
