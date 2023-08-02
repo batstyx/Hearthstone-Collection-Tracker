@@ -1,20 +1,19 @@
-﻿using Hearthstone_Collection_Tracker.Controls;
+﻿using HearthMirror.Enums;
 using Hearthstone_Collection_Tracker.Internal;
 using Hearthstone_Collection_Tracker.Internal.DataUpdaters;
+using Hearthstone_Deck_Tracker.Enums.Hearthstone;
 using Hearthstone_Deck_Tracker.Hearthstone;
+using Hearthstone_Deck_Tracker.Utility.Logging;
 using MahApps.Metro.Controls.Dialogs;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
-using System.Windows.Threading;
-using System.Windows.Controls;
-using HearthMirror.Enums;
-using Hearthstone_Deck_Tracker.Enums.Hearthstone;
-using Hearthstone_Deck_Tracker.Utility.Logging;
-using System.Reflection;
 using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
+using System.Windows.Controls;
+using System.Windows.Threading;
 
 namespace Hearthstone_Collection_Tracker
 {
@@ -29,20 +28,32 @@ namespace Hearthstone_Collection_Tracker
 
             Settings = PluginSettings.LoadSettings(PluginDataDir);
 
-            MainMenuItem = new PluginMenuItem {Header = Name};
-            MainMenuItem.Click += (sender, args) =>
+            MainMenuItem = new MenuItem { Header = "Collections" };
+            foreach (var account in Settings.Accounts)
             {
-                if (MainWindow == null)
+                var menuItem = new MenuItem { Header = account.AccountName};
+                menuItem.Click += (sender, args) =>
                 {
-                    InitializeMainWindow();
-                    Debug.Assert(MainWindow != null, "_mainWindow != null");
-                    MainWindow.Show();
-                }
-                else
-                {
-                    MainWindow.Activate();
-                }
-            };
+                    var selectedAccount = menuItem.Header as string;
+                    if (Settings.ActiveAccount != selectedAccount) Settings.SetActiveAccount(selectedAccount);
+                    if (MainWindow == null)
+                    {
+                        InitializeMainWindow();
+                        Debug.Assert(MainWindow != null, "_mainWindow != null");
+                        MainWindow.Show();
+                    }
+                    else
+                    {
+                        MainWindow.Refresh();
+                        MainWindow.Activate();
+                    }
+                };
+                MainMenuItem.Items.Add(menuItem);
+            }
+            MainMenuItem.Items.Add(new Separator());
+            var settingsMenuItem = new MenuItem { Header = "Settings" };
+            settingsMenuItem.Click += (sender, args) => OnButtonPress();
+            MainMenuItem.Items.Add(settingsMenuItem);
 
             Hearthstone_Deck_Tracker.API.DeckManagerEvents.OnDeckCreated.Add(HandleHearthstoneDeckUpdated);
             Hearthstone_Deck_Tracker.API.DeckManagerEvents.OnDeckUpdated.Add(HandleHearthstoneDeckUpdated);
