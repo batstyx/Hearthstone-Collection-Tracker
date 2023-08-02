@@ -207,6 +207,9 @@
   <data name="CARDSET_THE_SUNKEN_CITY" xml:space="preserve">
     <value>Voyage to the Sunken City</value>
   </data>
+  <data name="CARDSET_TITANS" xml:space="preserve">
+    <value>TITANS</value>
+  </data>
   <data name="CARDSET_TROLL" xml:space="preserve">
     <value>Rastakhan's Rumble</value>
   </data>

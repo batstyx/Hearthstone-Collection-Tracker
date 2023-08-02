@@ -15,6 +15,7 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.VANILLA,                    // Classic
+            CardSet.TITANS,                     // Titans
             CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
             CardSet.RETURN_OF_THE_LICH_KING,    // MarchoftheLichKing
             CardSet.REVENDRETH,                 // MurderatCastleNathria
@@ -48,6 +49,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.REVENDRETH,                 // MurderatCastleNathria
             CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
             CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
+            CardSet.TITANS,                     // Titans
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -56,6 +58,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;                // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;                 // HallofFame
+                case CardSet.TITANS: return ZodiacYear.WOLF;                    // Titans
                 case CardSet.BATTLE_OF_THE_BANDS: return ZodiacYear.WOLF;       // FestivalofLegends
                 case CardSet.RETURN_OF_THE_LICH_KING: return ZodiacYear.HYDRA;  // MarchoftheLichKing
                 case CardSet.REVENDRETH: return ZodiacYear.HYDRA;               // MurderatCastleNathria
