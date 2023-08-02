@@ -24,7 +24,7 @@ namespace Hearthstone_Collection_Tracker.ViewModels
                 {
                     List<CardStatsByRarity> cardStats = SetCards.GroupBy(c => c.Card.Rarity, c => c)
                         .Where(g => g.Key != CRarity.FREE)
-                        .OrderBy(g => (int)g.Key)
+                        .OrderByDescending(g => (int)g.Key)
                         .Select(gr => new CardStatsByRarity(gr.Key.ToString(), gr.AsEnumerable()))
                         .ToList();
                     TotalSetStats = new CardStatsByRarity("Total", SetCards);
