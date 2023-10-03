@@ -4,6 +4,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using Hearthstone_Deck_Tracker.Utility.Logging;
+using Hearthstone_Deck_Tracker.Hearthstone;
+using System.Threading.Tasks;
 
 namespace Hearthstone_Collection_Tracker.Internal.Importing
 {
@@ -17,7 +19,7 @@ namespace Hearthstone_Collection_Tracker.Internal.Importing
 
             try
             {
-                var collection = Reflection.GetCollection();
+                var collection = Reflection.Client.GetCollection();
                 var goldenCollection = collection.Where(x => x.PremiumType == 1);
                 var commonCollection = collection.Where(x => x.PremiumType == 0);
                 foreach(var set in sets)
