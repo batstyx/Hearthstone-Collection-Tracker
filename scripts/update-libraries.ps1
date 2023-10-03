@@ -36,4 +36,3 @@ function CopyLocal($name) {
 
 CopyLocal "HearthstoneDeckTracker.exe" | Out-Null
 FetchLib "HearthDb.dll"
-FetchLib "HearthMirror.dll"
