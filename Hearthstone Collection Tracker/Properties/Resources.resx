@@ -222,6 +222,9 @@
   <data name="CARDSET_VANILLA" xml:space="preserve">
     <value>Classic</value>
   </data>
+  <data name="CARDSET_WONDERS" xml:space="preserve">
+    <value>Caverns of Time</value>
+  </data>
   <data name="YEAR_OF_THE_DRAGON" xml:space="preserve">
     <value>Galakrond's Awakening</value>
   </data>

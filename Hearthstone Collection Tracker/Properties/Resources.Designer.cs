@@ -376,6 +376,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Caverns of Time.
+        /// </summary>
+        internal static string CARDSET_WONDERS {
+            get {
+                return ResourceManager.GetString("CARDSET_WONDERS", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Galakrond&apos;s Awakening.
         /// </summary>
         internal static string YEAR_OF_THE_DRAGON {

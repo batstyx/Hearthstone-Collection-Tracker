@@ -15,6 +15,7 @@ namespace Hearthstone_Collection_Tracker
         public static readonly CardSet[] CollectableSets =
         {
             CardSet.VANILLA,                    // Classic
+            CardSet.WONDERS,                    // CavernsofTime
             CardSet.TITANS,                     // Titans
             CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
             CardSet.RETURN_OF_THE_LICH_KING,    // MarchoftheLichKing
