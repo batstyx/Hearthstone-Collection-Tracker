@@ -376,6 +376,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Showndown in the Badlands.
+        /// </summary>
+        internal static string CARDSET_WILD_WEST {
+            get {
+                return ResourceManager.GetString("CARDSET_WILD_WEST", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Caverns of Time.
         /// </summary>
         internal static string CARDSET_WONDERS {

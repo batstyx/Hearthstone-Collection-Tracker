@@ -16,6 +16,7 @@ namespace Hearthstone_Collection_Tracker
         {
             CardSet.VANILLA,                    // Classic
             CardSet.WONDERS,                    // CavernsofTime
+            CardSet.WILD_WEST,                  // ShowndownintheBadlands
             CardSet.TITANS,                     // Titans
             CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
             CardSet.RETURN_OF_THE_LICH_KING,    // MarchoftheLichKing
@@ -51,6 +52,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
             CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
             CardSet.TITANS,                     // Titans
+            CardSet.WILD_WEST,                  // ShowndownintheBadlands
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -59,6 +61,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;                // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;                 // HallofFame
+                case CardSet.WILD_WEST: return ZodiacYear.WOLF;                 // ShowndownintheBadlands
                 case CardSet.TITANS: return ZodiacYear.WOLF;                    // Titans
                 case CardSet.BATTLE_OF_THE_BANDS: return ZodiacYear.WOLF;       // FestivalofLegends
                 case CardSet.RETURN_OF_THE_LICH_KING: return ZodiacYear.HYDRA;  // MarchoftheLichKing
