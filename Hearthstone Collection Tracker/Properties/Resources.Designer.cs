@@ -306,6 +306,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         /// <summary>
         ///   Looks up a localized string similar to The Grand Tournament.
         /// </summary>
+        internal static string CARDSET_TEMP1 {
+            get {
+                return ResourceManager.GetString("CARDSET_TEMP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The Grand Tournament.
+        /// </summary>
         internal static string CARDSET_TGT {
             get {
                 return ResourceManager.GetString("CARDSET_TGT", resourceCulture);
@@ -372,6 +381,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         internal static string CARDSET_VANILLA {
             get {
                 return ResourceManager.GetString("CARDSET_VANILLA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Whizbang&apos;s Workshop.
+        /// </summary>
+        internal static string CARDSET_WHIZBANGS_WORKSHOP {
+            get {
+                return ResourceManager.GetString("CARDSET_WHIZBANGS_WORKSHOP", resourceCulture);
             }
         }
         
@@ -453,6 +471,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         internal static string ZODIACYEAR_MAMMOTH {
             get {
                 return ResourceManager.GetString("ZODIACYEAR_MAMMOTH", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Year of the Pegasus.
+        /// </summary>
+        internal static string ZODIACYEAR_PEGASUS {
+            get {
+                return ResourceManager.GetString("ZODIACYEAR_PEGASUS", resourceCulture);
             }
         }
         

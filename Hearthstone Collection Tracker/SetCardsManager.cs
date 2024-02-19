@@ -16,6 +16,7 @@ namespace Hearthstone_Collection_Tracker
         {
             CardSet.VANILLA,                    // Classic
             CardSet.WONDERS,                    // CavernsofTime
+            CardSet.WHIZBANGS_WORKSHOP,         // Whizbang's Workshop
             CardSet.WILD_WEST,                  // ShowndownintheBadlands
             CardSet.TITANS,                     // Titans
             CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
@@ -53,6 +54,7 @@ namespace Hearthstone_Collection_Tracker
             CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
             CardSet.TITANS,                     // Titans
             CardSet.WILD_WEST,                  // ShowndownintheBadlands
+            CardSet.WHIZBANGS_WORKSHOP,         // Whizbang's Workshop
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -61,6 +63,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;                // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;                 // HallofFame
+                case CardSet.WHIZBANGS_WORKSHOP: return ZodiacYear.PEGASUS;     // Whizbang's Workshop
                 case CardSet.WILD_WEST: return ZodiacYear.WOLF;                 // ShowndownintheBadlands
                 case CardSet.TITANS: return ZodiacYear.WOLF;                    // Titans
                 case CardSet.BATTLE_OF_THE_BANDS: return ZodiacYear.WOLF;       // FestivalofLegends

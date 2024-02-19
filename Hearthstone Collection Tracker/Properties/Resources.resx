@@ -198,6 +198,9 @@
   <data name="CARDSET_STORMWIND" xml:space="preserve">
     <value>United in Stormwind</value>
   </data>
+  <data name="CARDSET_TEMP1" xml:space="preserve">
+    <value>The Grand Tournament</value>
+  </data>
   <data name="CARDSET_TGT" xml:space="preserve">
     <value>The Grand Tournament</value>
   </data>
@@ -221,6 +224,9 @@
   </data>
   <data name="CARDSET_VANILLA" xml:space="preserve">
     <value>Classic</value>
+  </data>
+  <data name="CARDSET_WHIZBANGS_WORKSHOP" xml:space="preserve">
+    <value>Whizbang's Workshop</value>
   </data>
   <data name="CARDSET_WILD_WEST" xml:space="preserve">
     <value>Showndown in the Badlands</value>
@@ -248,6 +254,9 @@
   </data>
   <data name="ZODIACYEAR_MAMMOTH" xml:space="preserve">
     <value>Year of the Mammoth</value>
+  </data>
+  <data name="ZODIACYEAR_PEGASUS" xml:space="preserve">
+    <value>Year of the Pegasus</value>
   </data>
   <data name="ZODIACYEAR_PHOENIX" xml:space="preserve">
     <value>Year of the Phoenix</value>
