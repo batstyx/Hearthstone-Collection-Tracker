@@ -1,6 +1,5 @@
 ﻿using HearthDb.Enums;
 using Hearthstone_Collection_Tracker.Internal;
-using Hearthstone_Collection_Tracker.Properties;
 using Hearthstone_Collection_Tracker.ViewModels;
 using Hearthstone_Deck_Tracker;
 using Hearthstone_Deck_Tracker.Hearthstone;
@@ -16,7 +15,7 @@ namespace Hearthstone_Collection_Tracker
         {
             CardSet.VANILLA,                    // Classic
             CardSet.WONDERS,                    // CavernsofTime
-            CardSet.WHIZBANGS_WORKSHOP,         // Whizbang's Workshop
+            CardSet.WHIZBANGS_WORKSHOP,         // WhizbangsWorkshop
             CardSet.WILD_WEST,                  // ShowndownintheBadlands
             CardSet.TITANS,                     // Titans
             CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
@@ -48,13 +47,10 @@ namespace Hearthstone_Collection_Tracker
 
         public static readonly CardSet[] StandardSets =
         {
-            CardSet.THE_SUNKEN_CITY,            // VoyagetotheSunkenCity
-            CardSet.REVENDRETH,                 // MurderatCastleNathria
-            CardSet.RETURN_OF_THE_LICH_KING,    // March of the Lich King
-            CardSet.BATTLE_OF_THE_BANDS,        // Festival of Legends
+            CardSet.BATTLE_OF_THE_BANDS,        // FestivalofLegends
             CardSet.TITANS,                     // Titans
             CardSet.WILD_WEST,                  // ShowndownintheBadlands
-            CardSet.WHIZBANGS_WORKSHOP,         // Whizbang's Workshop
+            CardSet.WHIZBANGS_WORKSHOP,         // WhizbangsWorkshop
         };
 
         public static ZodiacYear GetCardSetYear(CardSet cardSet)
@@ -63,7 +59,7 @@ namespace Hearthstone_Collection_Tracker
             {
                 case CardSet.EXPERT1: return ZodiacYear.INVALID;                // Classic
                 case CardSet.REWARD: return ZodiacYear.INVALID;                 // HallofFame
-                case CardSet.WHIZBANGS_WORKSHOP: return ZodiacYear.PEGASUS;     // Whizbang's Workshop
+                case CardSet.WHIZBANGS_WORKSHOP: return ZodiacYear.PEGASUS;     // WhizbangsWorkshop
                 case CardSet.WILD_WEST: return ZodiacYear.WOLF;                 // ShowndownintheBadlands
                 case CardSet.TITANS: return ZodiacYear.WOLF;                    // Titans
                 case CardSet.BATTLE_OF_THE_BANDS: return ZodiacYear.WOLF;       // FestivalofLegends
