@@ -394,7 +394,7 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Showndown in the Badlands.
+        ///   Looks up a localized string similar to Showdown in the Badlands.
         /// </summary>
         internal static string CARDSET_WILD_WEST {
             get {
