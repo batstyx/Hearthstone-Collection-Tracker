@@ -196,6 +196,15 @@ namespace Hearthstone_Collection_Tracker.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Perils in Paradise.
+        /// </summary>
+        internal static string CARDSET_ISLAND_VACATION {
+            get {
+                return ResourceManager.GetString("CARDSET_ISLAND_VACATION", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to One Night in Karazhan.
         /// </summary>
         internal static string CARDSET_KARA {

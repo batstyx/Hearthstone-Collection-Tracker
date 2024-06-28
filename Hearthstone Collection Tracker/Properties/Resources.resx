@@ -162,6 +162,9 @@
   <data name="CARDSET_ICECROWN" xml:space="preserve">
     <value>Knights of the Frozen Throne</value>
   </data>
+  <data name="CARDSET_ISLAND_VACATION" xml:space="preserve">
+    <value>Perils in Paradise</value>
+  </data>
   <data name="CARDSET_KARA" xml:space="preserve">
     <value>One Night in Karazhan</value>
   </data>
