@@ -1,6 +1,4 @@
-[![Latest Release](https://img.shields.io/github/release-pre/batstyx/Hearthstone-Collection-Tracker.svg)](https://github.com/batstyx/Hearthstone-Collection-Tracker/releases)
-
-[![Build Status](https://github.com/batstyx/Hearthstone-Collection-Tracker/actions/workflows/main.yml/badge.svg)](https://github.com/batstyx/Hearthstone-Collection-Tracker/actions/workflows/main.yml)
+## This Fork is Deprecated
 
 Hearthstone-Collection-Tracker
 ========================
